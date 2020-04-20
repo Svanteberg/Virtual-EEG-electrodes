@@ -8,9 +8,7 @@ The EEG data from the published data base created at the Temple University Hospi
 
 Electrodes are placed according to the international 10-20 system (Jasper, Electroencephalogr. Clin. Neurophysiol. 1958, 10:367-380).
 
-![](https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20.png)
-
-<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20.png" width="40%">
+<img align=center src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20.png" width="40%">
 
 A total of 1,385 (♂/♀: 751/634) subjects with 11,163 (♂/♀: 5,648/5,515) recordings, corresponding to 5,144 hours, was extracted from the data set based on the criterion described below. Ages varied from 18 to 95 years with a mean age of 51±18 years. All original recordings were in European Data Format (EDF), unfiltered and sampled at 256 Hz. An arbitrary lower limit of recording length of 300 seconds was used to ensure that each recording would offer some variance during training. 
 
