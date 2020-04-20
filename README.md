@@ -22,7 +22,7 @@ All data was high pass filtered at 0.3 Hz and low pass filtered at 40 Hz using s
             x = Conv2D(filters=16*k*2**i,kernel_size=(1,3),strides=(1,2),padding='same')(x)
             x = LeakyReLU(alpha=0.2)(x)
         return x
-´´´
+
 
 ```
     def deconv(self,k,n,x):
@@ -31,7 +31,7 @@ All data was high pass filtered at 0.3 Hz and low pass filtered at 40 Hz using s
             if i != n-1:
                 x = LeakyReLU(alpha=0.2)(x)
         return x
-´´´
+
 
 
     def analyzer_model(self):
@@ -46,4 +46,4 @@ All data was high pass filtered at 0.3 Hz and low pass filtered at 40 Hz using s
         # decoder
         x = self.deconv(1,6,x)
         x = Conv2D(1,kernel_size=(1,1),strides=1)(x)
-´´´
+
