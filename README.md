@@ -32,7 +32,7 @@ All data was high pass filtered at 0.3 Hz and low pass filtered at 40 Hz using s
         x = LeakyReLU(alpha=0.2)(x)
         x = Conv2DTranspose(filters=256,kernel_size=(17,1),strides=1,padding='valid')(x)
         x = LeakyReLU(alpha=0.2)(x)
-
+```
 
 ### Temporal decoder block
 
