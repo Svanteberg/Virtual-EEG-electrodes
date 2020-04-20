@@ -68,6 +68,10 @@ All data was high pass filtered at 0.3 Hz and low pass filtered at 40 Hz using s
 ## Training schedule
 
 ```
+    self.generator.train_on_batch(x=real_eeg[:,self.input_A,:,:],y=real_eeg[:,self.output_B,:,:])
+```
+
+```
     def generate_eeg(self,train_data,num):
         # train or validate
         if train_data:
