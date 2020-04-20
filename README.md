@@ -16,7 +16,7 @@ All data was high pass filtered at 0.3 Hz and low pass filtered at 40 Hz using s
 
 ## Network architecture
 
-´´´
+```
     def conv(self,k,n,x):
         for i in range(n):
             x = Conv2D(filters=16*k*2**i,kernel_size=(1,3),strides=(1,2),padding='same')(x)
@@ -24,7 +24,7 @@ All data was high pass filtered at 0.3 Hz and low pass filtered at 40 Hz using s
         return x
 ´´´
 
-´´´
+```
     def deconv(self,k,n,x):
         for i in range(n):
             x = Conv2DTranspose(filters=16*k*2**(n-i),kernel_size=(1,3),strides=(1,2),padding='same')(x)
@@ -33,7 +33,7 @@ All data was high pass filtered at 0.3 Hz and low pass filtered at 40 Hz using s
         return x
 ´´´
 
-´´´
+
     def analyzer_model(self):
         input_eeg = Input(shape=(4,2560,1))
         # encoder
