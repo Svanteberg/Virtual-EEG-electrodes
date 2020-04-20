@@ -16,8 +16,8 @@ All data was high pass filtered at 0.3 Hz and low pass filtered at 40 Hz using s
 
 ## Network architecture
 
-´´´
-def conv(self,k,n,x):
+´´
+    def conv(self,k,n,x):
         for i in range(n):
             x = Conv2D(filters=16*k*2**i,kernel_size=(1,3),strides=(1,2),padding='same')(x)
             x = LeakyReLU(alpha=0.2)(x)
