@@ -62,4 +62,42 @@ All data was high pass filtered at 0.3 Hz and low pass filtered at 40 Hz using s
 
         x = self.deconv(1,4,x)
         x = Conv2D(1,kernel_size=(1,1),strides=1)(x)
+```
+
+
+## Training schedule
+
+```
+    def generate_eeg(self,train_data,num):
+        # train or validate
+        if train_data:
+            subject = self.train_subjects[num]
+            indices = self.train_indices[num]
+        else:
+            subject = self.val_subjects[num]
+            indices = self.val_indices[num]
+        # initialize out data
+        eeg = np.zeros((21,2560))
+        # choose recording from subject (if multiple)
+        recording = random.sample(range(len(indices)),len(indices))
+        # choose epoch of recording, skip first and last couple of epochs to avoid artefacts
+        epoch = random.randint(indices[recording[0]][0]+4,indices[recording[0]][1]-4)
+        # load two epochs and concatenate
+        epoch_1 = np.load('data/256/'+subject+'/eeg_'+str(epoch)+'.npy')
+        epoch_2 = np.load('data/256/'+subject+'/eeg_'+str(epoch+1)+'.npy')
+        data = np.concatenate((epoch_1,epoch_2),axis=1)
+        # check i amplitude > threshold, if so draw new data
+        try_count = 0
+        recording_count = 0
+        while np.max(np.abs(data)) > self.threshold and recording_count < len(recording)-1:
+            epoch = random.randint(indices[recording[recording_count]][0]+4,indices[recording[recording_count]][1]-4)
+            epoch_1 = np.load('data/256/'+subject+'/eeg_'+str(epoch)+'.npy')
+            epoch_2 = np.load('data/256/'+subject+'/eeg_'+str(epoch+1)+'.npy')
+            data = np.concatenate((epoch_1,epoch_2),axis=1)
+            try_count += 1
+            if try_count > 100:
+                recording_count += 1
+                try_count = 0
+        if np.max(np.abs(data)) > self.threshold:
+            
 
