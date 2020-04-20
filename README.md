@@ -51,13 +51,13 @@ All data was high pass filtered at 0.3 Hz and low pass filtered at 40 Hz using s
     def analyzer_model(self):
         input_eeg = Input(shape=(4,2560,1))
 
-        x = self.conv(1,6,input_eeg)
+        x = self.conv(1,4,input_eeg)
 
         x = Conv2D(1024,kernel_size=(4,1),strides=1,padding='valid')(x)
         x = LeakyReLU(alpha=0.2)(x)
         x = Conv2DTranspose(filters=256,kernel_size=(17,1),strides=1,padding='valid')(x)
         x = LeakyReLU(alpha=0.2)(x)
 
-        x = self.deconv(1,6,x)
+        x = self.deconv(1,4,x)
         x = Conv2D(1,kernel_size=(1,1),strides=1)(x)
 
