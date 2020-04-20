@@ -15,3 +15,32 @@ A total of 1,385 (♂/♀: 751/634) subjects with 11,163 (♂/♀: 5,648/5,515) 
 All data was high pass filtered at 0.3 Hz and low pass filtered at 40 Hz using second-degree Butterworth filters; the bandwidth was chosen according to our clinical preference. A 60 Hz notch filter was used to remove residual AC-noise. Filtering was applied with zero phase shift.
 
 ## Network architecture
+
+´´´
+def conv(self,k,n,x):
+        for i in range(n):
+            x = Conv2D(filters=16*k*2**i,kernel_size=(1,3),strides=(1,2),padding='same')(x)
+            x = LeakyReLU(alpha=0.2)(x)
+        return x
+
+    def deconv(self,k,n,x):
+        for i in range(n):
+            x = Conv2DTranspose(filters=16*k*2**(n-i),kernel_size=(1,3),strides=(1,2),padding='same')(x)
+            if i != n-1:
+                x = LeakyReLU(alpha=0.2)(x)
+        return x
+
+    def analyzer_model(self):
+        input_eeg = Input(shape=(4,2560,1))
+        # encoder
+        x = self.conv(1,6,input_eeg)
+        # analyzer
+        x = Conv2D(1024,kernel_size=(4,1),strides=1,padding='valid')(x)
+        x = LeakyReLU(alpha=0.2)(x)
+        x = Conv2DTranspose(filters=256,kernel_size=(17,1),strides=1,padding='valid')(x)
+        x = LeakyReLU(alpha=0.2)(x)
+        # decoder
+        x = self.deconv(1,6,x)
+        x = Conv2D(1,kernel_size=(1,1),strides=1)(x)
+        return Model(inputs=input_eeg,outputs=x,name='analyzer')
+´´´
