@@ -4,7 +4,7 @@
 
 This is a supplement to https://biorxiv.org/cgi/content/short/2020.04.20.049916v1.
 
-<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/movie.gif">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/movie.gif" width="110%">
 
 ## Data
 
