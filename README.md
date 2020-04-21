@@ -1,6 +1,8 @@
-# Virtual EEG-electrodes
+# Virtual EEG-electrodes (under construction)
 
 ## Introduction
+
+This is a supplement to https://biorxiv.org/cgi/content/short/2020.04.20.049916v1.
 
 ## Data
 
