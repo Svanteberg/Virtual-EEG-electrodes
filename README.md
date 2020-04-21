@@ -4,6 +4,8 @@
 
 This is a supplement to https://biorxiv.org/cgi/content/short/2020.04.20.049916v1. In this study, deep neural networks based on convolutional layers were used to process EEG data. Two networks were trained to upsample the data and one network was trained to recreate single channels.
 
+Below an example is shown of upsampling from four electrodes (F3, P3, F4 and P4; marked 'Input ->') to 21 electrodes (17 recreated as output from the network). The original signal is in red and the recreated is in blue. The training progression from training with the first 0 to 200 examples is illustrated.
+
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/movie.gif" width="110%">
 
 ## Data
