@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a supplement to https://biorxiv.org/cgi/content/short/2020.04.20.049916v1.
+This is a supplement to https://biorxiv.org/cgi/content/short/2020.04.20.049916v1. In this study, deep neural networks based on convolutional layers were used to process EEG data. Two networks were trained to upsample the data and one network was trained to recreate single channels.
 
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/movie.gif" width="110%">
 
