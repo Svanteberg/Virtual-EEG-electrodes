@@ -16,7 +16,7 @@ One network upsampled from four electrodes (F3, P3, F4 and P4; marked 'Input ->'
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20_4-17.png" width="50%">
 </p>
 
-An example is given below of the training progression of the first 0 to 200 examples. The original signal is in red and the recreated is in blue.
+An example of the training progression of the first 0 to 200 examples is given below. The original signal is in red and the recreated is in blue.
 
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/movie.gif" width="110%">
 
