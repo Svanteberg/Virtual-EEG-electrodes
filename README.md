@@ -41,7 +41,7 @@ The data was split in a 80, 10 and 10 percent distribution for training, validat
 ### Temporal encoder block
 
 ```
-    def conv(self,k,n,x):
+    def conv(k,n,x):
         for i in range(n):
             x = Conv2D(filters=16*k*2**i,kernel_size=(1,3),strides=(1,2),padding='same')(x)
             x = LeakyReLU(alpha=0.2)(x)
@@ -59,7 +59,7 @@ The data was split in a 80, 10 and 10 percent distribution for training, validat
 ### Temporal decoder block
 
 ```
-    def deconv(self,k,n,x):
+    def deconv(k,n,x):
         for i in range(n):
             x = Conv2DTranspose(filters=16*k*2**(n-i),kernel_size=(1,3),strides=(1,2),padding='same')(x)
             if i != n-1:
@@ -70,7 +70,7 @@ The data was split in a 80, 10 and 10 percent distribution for training, validat
 ### Generator network
 
 ```
-    def analyzer_model(self):
+    def analyzer_model():
         input_eeg = Input(shape=(4,2560,1))
 
         x = self.conv(1,4,input_eeg)
@@ -84,11 +84,17 @@ The data was split in a 80, 10 and 10 percent distribution for training, validat
         x = Conv2D(1,kernel_size=(1,1),strides=1)(x)
 ```
 
+The network was initialized as:
+
+```
+    generator = analyzer_model()
+    generator.compile(loss='mae',optimizer=Adam(1e-4, 0.99, 0.01))
+
 
 ## Training schedule
 
 ```
-    self.generator.train_on_batch(x=real_eeg[:,self.input_A,:,:],y=real_eeg[:,self.output_B,:,:])
+    generator.train_on_batch(x=real_eeg[:,input_A,:,:],y=real_eeg[:,output_B,:,:])
 ```
 
 ```
