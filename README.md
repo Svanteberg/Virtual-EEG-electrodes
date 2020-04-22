@@ -24,7 +24,7 @@ An example of the training progression of the first 0 to 200 examples is given b
 
 The EEG data from the published data base created at the Temple University Hospital (TUH), Philadelphia (Obeid & Picone, Frontiers of neuroscience 2016, 10:1-5) was used for this study. The TUH EEG Corpus (v1.1.0) with average reference was used (downloaded during 17-21 January 2019).
 
-A total of 1,385 recordings, corresponding to 5,144 hours, was extracted from the data set. Sampling frequency 256 Hz. Recordings were > 300 seconds. The data was bandpass filtered between 0.3 Hz and 40 Hz using second-degree Butterworth filters. A 60 Hz notch filter was used to remove residual AC-noise. Filtering was applied with zero phase shift.
+A total of 1,385 recordings sampled at 256 Hz, corresponding to 5,144 hours, was extracted from the data set. Recordings were > 300 seconds. The data was bandpass filtered between 0.3 Hz and 40 Hz using second-degree Butterworth filters. A 60 Hz notch filter was used to remove residual AC-noise. Filtering was applied with zero phase shift.
 
 ### Data organisation
 
