@@ -26,6 +26,8 @@ The EEG data from the published data base created at the Temple University Hospi
 
 A total of 1,385 recordings, corresponding to 5,144 hours, was extracted from the data set. Sampling frequency 256 Hz. Recordings were > 300 seconds. The data was bandpass filtered between 0.3 Hz and 40 Hz using second-degree Butterworth filters. A 60 Hz notch filter was used to remove residual AC-noise. Filtering was applied with zero phase shift.
 
+### Data organisation
+
 The data was organized with each individual having a folder containing one or more of their respective EEG recordings. All EEGs in each folder were divided into numpy files of 10 s epochs and numbered. A file mapping the numpy files to the individuals and EEG recordings was created.
 
 <p align="center">
