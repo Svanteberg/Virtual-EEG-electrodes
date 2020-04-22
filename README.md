@@ -89,7 +89,7 @@ The network was initialized as:
 ```
     generator = analyzer_model()
     generator.compile(loss='mae',optimizer=Adam(1e-4, 0.99, 0.01))
-
+```
 
 ## Training schedule
 
