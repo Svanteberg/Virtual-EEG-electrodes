@@ -26,6 +26,8 @@ The EEG data from the published data base created at the Temple University Hospi
 
 A total of 1,385 recordings, corresponding to 5,144 hours, was extracted from the data set. Sampling frequency 256 Hz. Recordings were > 300 seconds. The data was bandpass filtered between 0.3 Hz and 40 Hz using second-degree Butterworth filters. A 60 Hz notch filter was used to remove residual AC-noise. Filtering was applied with zero phase shift.
 
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/data_architecture.png">
+
 ## Network architecture
 
 ### Temporal encoder block
