@@ -4,19 +4,25 @@
 
 This is a supplement to https://biorxiv.org/cgi/content/short/2020.04.20.049916v1. In this study, deep neural networks based on convolutional layers were used to process EEG data. Two networks were trained to upsample the data and one network was trained to recreate single channels.
 
-Below an example is shown of upsampling from four electrodes (F3, P3, F4 and P4; marked 'Input ->') to 21 electrodes (17 recreated as output from the network). The original signal is in red and the recreated is in blue. The training progression from training with the first 0 to 200 examples is illustrated.
+Electrodes are placed according to the international 10-20 system (Jasper, Electroencephalogr. Clin. Neurophysiol. 1958, 10:367-380).
+
+<p align="center">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20.png" width="50%">
+</p>
+
+One network upsampled from four electrodes (F3, P3, F4 and P4; marked 'Input ->') to 21 electrodes (17 recreated as output from the network).
+
+<p align="center">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20_4-17.png" width="50%">
+</p>
+
+An example is given below of the training progression of the first 0 to 200 examples. The original signal is in red and the recreated is in blue.
 
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/movie.gif" width="110%">
 
 ## Data
 
 The EEG data from the published data base created at the Temple University Hospital (TUH), Philadelphia (Obeid & Picone, Frontiers of neuroscience 2016, 10:1-5) was used for this study. The TUH EEG Corpus (v1.1.0) with average reference was used (downloaded during 17-21 January 2019).
-
-Electrodes are placed according to the international 10-20 system (Jasper, Electroencephalogr. Clin. Neurophysiol. 1958, 10:367-380).
-
-<p align="center">
-<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20.png" width="50%">
-</p>
 
 A total of 1,385 recordings, corresponding to 5,144 hours, was extracted from the data set. Sampling frequency 256 Hz. Recordings were > 300 seconds. The data was bandpass filtered between 0.3 Hz and 40 Hz using second-degree Butterworth filters. A 60 Hz notch filter was used to remove residual AC-noise. Filtering was applied with zero phase shift.
 
