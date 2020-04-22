@@ -94,7 +94,15 @@ The network was initialized as:
 ## Training schedule
 
 ```
-    generator.train_on_batch(x=real_eeg[:,input_A,:,:],y=real_eeg[:,output_B,:,:])
+    def train(self):
+        for epoch in range(0,epochs):
+            index = random.sample(range(len(train_subjects)),len(train_subjects))
+            for loop_index in range(0,len(train_subjects)):
+                # train generator
+                real_eeg,norm = self.generate_eeg(True,index[loop_index])
+                if norm != 0: 
+                    generator.train_on_batch(x=real_eeg[:,input_A,:,:],y=real_eeg[:,output_B,:,:])
+
 ```
 
 ```
