@@ -37,9 +37,9 @@ The data was organized with each subject having a folder containing one or more 
 A file mapping the numpy files to the subjects and EEG recordings was created.
 
 <p align="center">
-`[[subject 1,[]],[subject 2,[]],...,[subject n,[]]]`
+``[[subject 1,[]],[subject 2,[]],...,[subject n,[]]]``
 </p>
-    
+
 
 The data was split in a 80, 10 and 10 percent distribution for training, validation and testing. The distribution was with regard to the number of subjects to keep the data sets disjoint.
 
