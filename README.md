@@ -34,7 +34,7 @@ The data was organized with each subject having a folder containing one or more 
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/data_architecture.png" width="75%">
 </p>
 
-A file mapping the numpy files to the subjects and EEG recordings was created.
+A list mapping the numpy files to the subjects and EEG recordings was created.
 
 
 ```
