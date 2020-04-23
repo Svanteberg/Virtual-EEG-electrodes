@@ -28,11 +28,18 @@ A total of 11,163 recordings (roughly 5,144 hours, from 1,385 subjects) with dur
 
 ### Data organisation
 
-The data was organized with each subject having a folder containing one or more of their respective EEG recordings. All EEGs in each folder were divided into numpy files of 10 s epochs and numbered. A file mapping the numpy files to the subjects and EEG recordings was created.
+The data was organized with each subject having a folder containing one or more of their respective EEG recordings. All EEGs in each folder were divided into numpy files of 10 s epochs and numbered. 
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/data_architecture.png" width="75%">
 </p>
+
+A file mapping the numpy files to the subjects and EEG recordings was created.
+
+<p align="center">
+`[[subject 1,[]],[subject 2,[]],...,[subject n,[]]]`
+</p>
+    
 
 The data was split in a 80, 10 and 10 percent distribution for training, validation and testing. The distribution was with regard to the number of subjects to keep the data sets disjoint.
 
