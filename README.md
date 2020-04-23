@@ -44,6 +44,15 @@ A file mapping the numpy files to the subjects and EEG recordings was created.
     [subject n id,[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG r,end EEG r]]]]
 ```
 
+e.g.
+
+```
+    [[0,[[0,121],[122,205],]],
+    [1,[[0,93],[94,303],[304,511],[512,789]]],
+    ...,
+    [1385,[[0,64],[65,247],[248,388],[389,601]]]]
+```
+
 The data was split in a 80, 10 and 10 percent distribution for training, validation and testing. The distribution was with regard to the number of subjects to keep the data sets disjoint.
 
 ## Network architecture
