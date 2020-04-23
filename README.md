@@ -36,10 +36,12 @@ The data was organized with each subject having a folder containing one or more 
 
 A file mapping the numpy files to the subjects and EEG recordings was created.
 
-<p align="center">
-``[[subject 1 id,[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG p,end EEG p]]],[subject 2 id,[]],...,[subject n id,[]]]``
-</p>
 
+```[[subject 1 id,[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG p,end EEG p]]],
+    [subject 2 id,[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG q,end EEG q]]],
+    ...,
+    [subject n id,[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG r,end EEG r]]]]
+```
 
 The data was split in a 80, 10 and 10 percent distribution for training, validation and testing. The distribution was with regard to the number of subjects to keep the data sets disjoint.
 
