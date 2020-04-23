@@ -37,7 +37,7 @@ The data was organized with each subject having a folder containing one or more 
 A file mapping the numpy files to the subjects and EEG recordings was created.
 
 <p align="center">
-``[[subject 1,[]],[subject 2,[]],...,[subject n,[]]]``
+``[[subject 1 id,[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG p,end EEG p]]],[subject 2 id,[]],...,[subject n id,[]]]``
 </p>
 
 
