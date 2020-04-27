@@ -57,6 +57,20 @@ The data was split in a 80, 10 and 10 percent distribution for training, validat
 
 ## Network architecture
 
+### Imports
+
+```
+from tensorflow.keras.layers import LeakyReLU, Layer, Input, Conv2D, Activation, add, BatchNormalization, Conv2DTranspose, Reshape, concatenate
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.backend import mean
+from tensorflow.keras.models import Model
+import tensorflow.keras.backend as K
+import tensorflow as tf
+
+import numpy as np
+import random
+
+
 ### Temporal encoder block
 
 ```
