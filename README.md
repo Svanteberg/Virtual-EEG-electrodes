@@ -10,20 +10,32 @@ Electrodes are placed according to the international 10-20 system (Jasper, Elect
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20.png" width="50%">
 </p>
 
-### GN1
+### The networks
 
-This network upsampled from 4 to 21 electrodes (17 recreated as output from the network).
+
+
+#### GN1
+
+This network upsampled from 4 to 21 electrodes (17 recreated as output from the network). Here, the electrode density is very low and distances are large and the problem is ill posed.
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20_4-17.png" width="50%">
 </p>
 
-### GN2
+#### GN2
 
-This network upsampled from 14 to 21 electrodes (7 recreated as output from the network).
+This network upsampled from 14 to 21 electrodes (7 recreated as output from the network). For this case, the electrode density is higher, the electrodes have an even distribution and the recreated values lie within the field of known values.
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20_14-7.png" width="50%">
+</p>
+
+#### GN3
+
+This network recreates the value of any one blocked channels.
+
+<p align="center">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/" width="50%">
 </p>
 
 An example of the training progression for GN1 of the first 0 to 200 examples is given below. The original signal is in red and the recreated is in blue.
