@@ -151,7 +151,7 @@ The network was initialized as:
 For each epoch of training, the training order of the subjects were randomized
 
 <p align="center">
-<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/subjects_rand_ord.png" width="50%">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/subjects_rand_ord.png" width="84%">
 </p>
 
 and the network was trained with one example from each subject. For each subject and training epoch, the EEG recordings were given a random order.
