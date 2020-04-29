@@ -32,7 +32,7 @@ This network upsampled from 14 to 21 electrodes (7 recreated as output from the 
 
 #### GN3
 
-This network recreates the value of any one blocked channel.
+This network recreates the value of any one blocked channel. The signal of the blocked channel is replaced by low amplitude white noise. The network therefore also has to learn to detect which channel is missing, in addition to recreating the signal.
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/movie_gn3.gif" width="50%">
