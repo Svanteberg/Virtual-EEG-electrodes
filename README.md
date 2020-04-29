@@ -24,7 +24,7 @@ This network upsampled from 4 to 21 electrodes (17 recreated as output from the 
 
 #### GN2
 
-This network upsampled from 14 to 21 electrodes (7 recreated as output from the network). For this case, the electrode density is higher, the electrodes have an even distribution and the recreated values lie within the field of known values.
+This network upsampled from 14 to 21 electrodes (7 recreated as output from the network). For this case, the electrode density is higher, the electrodes have an even distribution and the recreated values lie within the field of known values (in reality, the density decreases in radial direction due to the spherical geometry). The conditions for finding a solution for the problem is thus more favorable.
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20_14-7.png" width="50%">
