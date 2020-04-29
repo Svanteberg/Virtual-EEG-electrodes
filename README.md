@@ -151,7 +151,7 @@ The network was initialized as:
 For each epoch of training, the training order of the subjects were randomized.
 
 <p align="center">
-<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/subjects_rand_ord.gif" width="50%">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/subjects_rand_ord.png" width="50%">
 </p>
 
 ```
