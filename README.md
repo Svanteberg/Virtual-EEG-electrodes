@@ -160,7 +160,7 @@ and the network was trained with one example from each subject. For each subject
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/eeg_rand_ord.png" width="65%">
 </p>
 
-A start position in the first EEG was randomly chosen. This way of drawing examples resulted in 10 s intervals overlapping two 10 s numpy files. These two files were loaded and concatenated, the example could then be extracted.
+A start position in the first EEG was randomly chosen by first randomly choosing a numpy file and then a random start position within the file. This way of drawing examples resulted in 10 s intervals overlapping two 10 s numpy files. These two files were loaded and concatenated, the example could then be extracted.
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/file_concat.png" width="35%">
