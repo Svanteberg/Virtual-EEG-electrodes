@@ -148,11 +148,13 @@ The network was initialized as:
 
 ## Training schedule
 
-For each epoch of training, the training order of the subjects were randomized.
+For each epoch of training, the training order of the subjects were randomized
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/subjects_rand_ord.png" width="50%">
 </p>
+
+and the network was trained with one example from each subject. For each subject and training epoch, the EEG recordings were given a random order. A start position in the EEG were randomly chosen. This way of drawing examples resulted in 10 s intervals overlapping two 10 s numpy files. These two files where loaded and concatenated, the example could the be extracted. If the amplitude was between -500 and 500 µV, the example was accepted and used for training. If not, a new starting position in the recording was randomly chosen and the new example was checked for amplitude. This was repeated up to 100 times. If all 100 examples of that recording was rejected, the same procedure was performed for the next recording, and so on.
 
 ```
     def train(self):
