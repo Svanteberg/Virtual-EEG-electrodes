@@ -69,10 +69,10 @@ A list mapping the numpy files to the subjects and EEG recordings was created.
 e.g.
 
 ```
-    [[0,[[0,121],[122,205]]],
-    [1,[[0,93],[94,303],[304,511],[512,789]]],
-    ...,
-    [1385,[[0,64],[65,247],[248,388],[389,601]]]]
+    indices = [[0,[[0,121],[122,205]]],
+                [1,[[0,93],[94,303],[304,511],[512,789]]],
+                ...,
+                [1385,[[0,64],[65,247],[248,388],[389,601]]]]
 ```
 
 The data was split in a 80, 10 and 10 percent distribution for training, validation and testing. The distribution was with regard to the number of subjects to keep the data sets disjoint.
@@ -182,7 +182,7 @@ If the amplitude was between -500 and 500 µV, the example was accepted and used
 ```
 
 ```
-    def generate_eeg(self,num):
+    def generate_eeg(self,subject,indices):
         # initialize out data
         eeg = np.zeros((21,2560))
         # choose recording from subject (if multiple)
@@ -196,7 +196,7 @@ If the amplitude was between -500 and 500 µV, the example was accepted and used
         # check i amplitude > threshold, if so draw new data
         try_count = 0
         recording_count = 0
-        while np.max(np.abs(data)) > self.threshold and recording_count < len(recording)-1:
+        while np.max(np.abs(data)) > 500 and recording_count < len(recording)-1:
             epoch = random.randint(indices[recording[recording_count]][0]+4,indices[recording[recording_count]][1]-4)
             epoch_1 = np.load('data/256/'+subject+'/eeg_'+str(epoch)+'.npy')
             epoch_2 = np.load('data/256/'+subject+'/eeg_'+str(epoch+1)+'.npy')
@@ -205,7 +205,7 @@ If the amplitude was between -500 and 500 µV, the example was accepted and used
             if try_count > 100:
                 recording_count += 1
                 try_count = 0
-        if np.max(np.abs(data)) > self.threshold:
+        if np.max(np.abs(data)) > 500:
             eeg = 'Amplitude error'
             norm = 0
         else:
