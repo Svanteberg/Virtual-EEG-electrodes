@@ -192,10 +192,17 @@ The network was initialized as:
             position = random.randint(0,2559)
             eeg = data[:,position:(position+2560)]
             eeg = eeg[np.newaxis,:,:,np.newaxis]
-            if self.use_data_normalization == 1:
-                eeg,norm = self.normalizeStd(eeg)
-            elif self.use_data_normalization == 2:
-                eeg,norm = self.normalizeMax(eeg)
+            eeg,norm = self.normalize_std(eeg)
         return eeg,norm
 ```
-            
+
+```
+    def normalize_std(self,data):
+        # Normalizes the amplitude to a std of 1 per example
+        norm_data = np.zeros(np.shape(data))
+        norm = np.zeros(np.shape(data)[0])
+        for i in np.arange(np.shape(data)[0]):
+            norm[i] = np.std(np.reshape(data[i],(np.shape(data)[1]*np.shape(data)[2],1)))
+            norm_data[i] = data[i]/norm[i]
+        return norm_data,norm
+
