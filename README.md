@@ -148,6 +148,12 @@ The network was initialized as:
 
 ## Training schedule
 
+For each epoch of training, the training order of the subjects were randomized.
+
+<p align="center">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/subjects_rand_ord.gif" width="50%">
+</p>
+
 ```
     def train(self):
         for epoch in range(0,epochs):
