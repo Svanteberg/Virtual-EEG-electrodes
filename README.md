@@ -32,7 +32,7 @@ This network upsampled from 14 to 21 electrodes (7 recreated as output from the 
 
 #### GN3
 
-This network recreates the value of any one blocked channels.
+This network recreates the value of any one blocked channel.
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/" width="50%">
