@@ -192,7 +192,7 @@ The network was initialized as:
             position = random.randint(0,2559)
             eeg = data[:,position:(position+2560)]
             eeg = eeg[np.newaxis,:,:,np.newaxis]
-            eeg,norm = self.normalize_std(eeg)
+            eeg,norm = normalize_std(eeg)
         return eeg,norm
 ```
 
