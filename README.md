@@ -10,13 +10,23 @@ Electrodes are placed according to the international 10-20 system (Jasper, Elect
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20.png" width="50%">
 </p>
 
-One network upsampled from four electrodes (F3, P3, F4 and P4; marked 'Input ->') to 21 electrodes (17 recreated as output from the network).
+### GN1
+
+This network upsampled from four electrodes to 21 electrodes (17 recreated as output from the network).
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20_4-17.png" width="50%">
 </p>
 
-An example of the training progression of the first 0 to 200 examples is given below. The original signal is in red and the recreated is in blue.
+### GN2
+
+This network upsampled from fourteen electrodes (Fp1, Fp2, F7, F8, T5, T6) to 21 electrodes (7 recreated as output from the network).
+
+<p align="center">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20_14-7.png" width="50%">
+</p>
+
+An example of the training progression for GN1 of the first 0 to 200 examples is given below. The original signal is in red and the recreated is in blue.
 
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/movie.gif" width="110%">
 
