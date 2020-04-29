@@ -161,14 +161,7 @@ The network was initialized as:
 ```
 
 ```
-    def generate_eeg(self,train_data,num):
-        # train or validate
-        if train_data:
-            subject = self.train_subjects[num]
-            indices = self.train_indices[num]
-        else:
-            subject = self.val_subjects[num]
-            indices = self.val_indices[num]
+    def generate_eeg(self,num):
         # initialize out data
         eeg = np.zeros((21,2560))
         # choose recording from subject (if multiple)
@@ -192,5 +185,17 @@ The network was initialized as:
                 recording_count += 1
                 try_count = 0
         if np.max(np.abs(data)) > self.threshold:
+            eeg = 'Amplitude error'
+            norm = 0
+        else:
+            # choose starting position in the two epochs to create one epoch
+            position = random.randint(0,2559)
+            eeg = data[:,position:(position+2560)]
+            eeg = eeg[np.newaxis,:,:,np.newaxis]
+            if self.use_data_normalization == 1:
+                eeg,norm = self.normalizeStd(eeg)
+            elif self.use_data_normalization == 2:
+                eeg,norm = self.normalizeMax(eeg)
+        return eeg,norm
+```
             
-
