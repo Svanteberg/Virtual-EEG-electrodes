@@ -16,7 +16,7 @@ Electrodes are placed according to the international 10-20 system (Jasper, Elect
 
 #### GN1
 
-This network upsampled from 4 to 21 electrodes (17 recreated as output from the network). Here, the electrode density is very low and distances are large and the problem is ill posed.
+This network upsampled from 4 to 21 electrodes (17 recreated as output from the network). Here, the electrode density is very low, the distances are large and the problem is hence ill posed.
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20_4-17.png" width="50%">
