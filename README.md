@@ -40,7 +40,7 @@ This network recreates the value of any one blocked channel. The signal of the b
 
 An example of the training progression for GN1 of the first 0 to 200 examples is given below. The original signal is in red and the recreated is in blue.
 
-<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/movie_gn1.gif" width="110%">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/movie.gif" width="110%">
 
 ## Data
 
