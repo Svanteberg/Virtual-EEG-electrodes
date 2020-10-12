@@ -50,6 +50,8 @@ The Python library ‘pyEDFlib’ (Nahrstaedt & Lee-Messer, https://github.com/h
 
 ### Data organisation
 
+*The developed scripts require that the data is organized in a specific way. This will probably be the hardest problem for anyone attempting to use them, and it will probably save time to instead modify the scripts to accomodate your own data structure.*
+
 The data was organized with each subject having a folder containing one or more of their respective EEG recordings. All EEGs in each folder were divided into numpy files of 10 s epochs and numbered in consecutive order. 
 
 <p align="center">
