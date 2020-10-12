@@ -200,7 +200,7 @@ class generator_1():
             print('*********************** Saving results ****************************')
             # save model
             self.generator.save(self.directory + '/gn1_model.h5')
-            # save training/validation/test losses
+            # save training/validation losses
             np.save(self.directory + '/mae_train.npy',self.mae_train)
             np.save(self.directory + '/mae_val.npy',self.mae_val)
 
