@@ -300,11 +300,11 @@ class generator_1():
                 recording_count += 1
                 try_count = 0
         if np.max(np.abs(data)) > self.threshold:
-            # no examples with acceptbale amplitude was created
+            # no examples with acceptable amplitude was created
             eeg = 'Amplitude error'
             norm = 0
         else:
-            # choose random starting position in the first epoch and extrasct 10 s of data
+            # choose random starting position in the first epoch and extract 10 s of data
             position = random.randint(0, 2559)
             eeg = data[:, position:(position + 2560)]
             eeg = eeg[np.newaxis, :, :, np.newaxis]
