@@ -50,29 +50,38 @@ The Python library ‘pyEDFlib’ (Nahrstaedt & Lee-Messer, https://github.com/h
 
 ### Data organisation
 
-The data was organized with each subject having a folder containing one or more of their respective EEG recordings. All EEGs in each folder were divided into numpy files of 10 s epochs and numbered. 
+The data was organized with each subject having a folder containing one or more of their respective EEG recordings. All EEGs in each folder were divided into numpy files of 10 s epochs and numbered in consecutively. 
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/data_architecture.png" width="75%">
 </p>
 
-A list mapping the numpy files to the subjects and EEG recordings was created.
+Two lists mapping the numpy files to the subjects and EEG recordings were created.
 
+Subject list:
 
 ```
-    [[subject 1 id,[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG p,end EEG p]]],
-    [subject 2 id,[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG q,end EEG q]]],
-    ...,
-    [subject n id,[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG r,end EEG r]]]]
+    [subject id 0, subject id 2, ..., sibject id n]
+```
+
+Index list for numy files:
+
+```
+    (subject id 0 ->) [[[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG p,end EEG p]]],
+    (subject id 1 ->) [[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG q,end EEG q]]],
+                        .
+                        .
+                        .
+    (subject id n ->) [[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG r,end EEG r]]]]
 ```
 
 e.g.
 
 ```
-    indices = [[0,[[0,121],[122,205]]],
-                [1,[[0,93],[94,303],[304,511],[512,789]]],
+    indices = [[[[0,121],[122,205]]],
+                [[[0,93],[94,303],[304,511],[512,789]]],
                 ...,
-                [1385,[[0,64],[65,247],[248,388],[389,601]]]]
+                [[[0,64],[65,247],[248,388],[389,601]]]]
 ```
 
 The data was split in a 80, 10 and 10 percent distribution for training, validation and testing. The distribution was with regard to the number of subjects to keep the data sets disjoint.
