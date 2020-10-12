@@ -67,22 +67,24 @@ Subject list:
 Index list for numy files:
 
 ```
-    (subject id 0 ->) [[[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG p,end EEG p]]],
-    (subject id 1 ->) [[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG q,end EEG q]]],
+    (subject id 0 ->) [[[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG p,end EEG p]],
+    (subject id 1 ->) [[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG q,end EEG q]],
                         .
                         .
                         .
-    (subject id n ->) [[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG r,end EEG r]]]]
+    (subject id n ->) [[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG r,end EEG r]]]]
 ```
 
 e.g.
 
 ```
-    indices = [[[[0,121],[122,205]]],
-                [[[0,93],[94,303],[304,511],[512,789]]],
+    indices = [[[0,121],[122,205]],
+                [[0,93],[94,303],[304,511],[512,789]],
                 ...,
-                [[[0,64],[65,247],[248,388],[389,601]]]]
+                [[0,64],[65,247],[248,388],[389,601]]]
 ```
+
+so that each row in the index list corresponds to a subject and the numbers in each brachet correspond to the start and end of an EEG recording.
 
 The data was split in a 80, 10 and 10 percent distribution for training, validation and testing. The distribution was with regard to the number of subjects to keep the data sets disjoint.
 
