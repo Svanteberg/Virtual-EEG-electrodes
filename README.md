@@ -110,5 +110,7 @@ A start position in the first EEG was randomly chosen by first randomly choosing
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/file_concat.png" width="35%">
 </p>
 
+The motivation for this was to allow for a variation in the training data to counteract overfitting, compared to using non-overlapping static 10 s examples. Given the realtively large total amount of data, it was not feasable to load all data and store it in the primary memory. Using 10 s instead of whole recordings hence allowed for faster loading times and more varied training content.
+
 If the amplitude was between -500 and 500 µV, the example was accepted and used for training. If not, a new starting position in the recording was randomly chosen and the new example was checked for amplitude. This was repeated up to 100 times. If all 100 examples of that recording were rejected, the same procedure was performed for the next recording, and so on. If all examples of all recordings of a subject were rejected, no training took place that epoch for that specific subject.
 
