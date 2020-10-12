@@ -50,7 +50,7 @@ The Python library ‘pyEDFlib’ (Nahrstaedt & Lee-Messer, https://github.com/h
 
 ### Data organisation
 
-The data was organized with each subject having a folder containing one or more of their respective EEG recordings. All EEGs in each folder were divided into numpy files of 10 s epochs and numbered in consecutively. 
+The data was organized with each subject having a folder containing one or more of their respective EEG recordings. All EEGs in each folder were divided into numpy files of 10 s epochs and numbered in consecutive order. 
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/data_architecture.png" width="75%">
