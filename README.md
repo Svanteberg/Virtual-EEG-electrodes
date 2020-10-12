@@ -56,15 +56,13 @@ The data was organized with each subject having a folder containing one or more 
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/data_architecture.png" width="75%">
 </p>
 
-Two lists mapping the numpy files to the subjects and EEG recordings were created.
-
-Subject list:
+Two lists mapping the numpy files to the subjects and EEG recordings were created. A subject list:
 
 ```
     [subject id 0, subject id 2, ..., sibject id n]
 ```
 
-Index list for numy files:
+An index list for the numpy files:
 
 ```
     (subject id 0 ->) [[[[start EEG 1,end EEG 1],[start EEG 2,end EEG 2],...,[start EEG p,end EEG p]],
