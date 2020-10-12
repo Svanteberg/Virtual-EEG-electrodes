@@ -94,7 +94,7 @@ The data was split in a 80, 10 and 10 percent distribution for training, validat
 
 ## Training schedule
 
-For each epoch of training, the training order of the subjects were randomized
+An epoch fo training was defined as training with one example from each subject in the training set. For each epoch of training, the training order of the subjects were randomized
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/subjects_rand_ord.png" width="100%">
