@@ -1,4 +1,4 @@
-# Virtual EEG-electrodes (under construction)
+# Virtual EEG-electrodes ***** under construction *****
 
 ## Introduction
 
