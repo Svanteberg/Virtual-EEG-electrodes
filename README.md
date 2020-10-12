@@ -84,7 +84,7 @@ e.g.
                 [[0,64],[65,247],[248,388],[389,601]]]
 ```
 
-so that each row in the index list corresponds to a subject and the numbers in each brachet correspond to the start and end of an EEG recording. * In hindsight, a better option may be to store each recording in individual folders. This would reduce the risk of accidently concatenate files from different recordings due to programming errors or faulty information in the index file. *
+so that each row in the index list corresponds to a subject and the numbers in each brachet correspond to the start and end of an EEG recording. *In hindsight, a better option may be to store each recording in individual folders. This would reduce the risk of accidently concatenate files from different recordings due to programming errors or faulty information in the index file.*
 
 The data was split in a 80, 10 and 10 percent distribution for training, validation and testing. The distribution was with regard to the number of subjects to keep the data sets disjoint.
 
