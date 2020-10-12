@@ -59,7 +59,7 @@ The data was organized with each subject having a folder containing one or more 
 Two lists mapping the numpy files to the subjects and EEG recordings were created. A subject list:
 
 ```
-    [subject id 0, subject id 2, ..., sibject id n]
+    [subject id 0, subject id 1, ..., sibject id n]
 ```
 
 An index list for the numpy files:
