@@ -98,10 +98,10 @@ The data was split in a 80, 10 and 10 percent distribution for training, validat
 
 ## Network architecture
 
-The network analyzed temporal and spatial dimensions separately. First, a series of convolutional layers analyzed the data for temporal features. Second, all electrodes were analyzed using a convolutional layer with kernel size equal to the number of electrodes, followed by upsampling to the correct number of electrodes by a convolutional transpose layer. Third, convolutional transpose layers assembles the signals. Fourth the network ends with a convolutional layer that merges all filters. LeakyReLU activations follow most convolutional layers.
+The network analyzed temporal and spatial dimensions separately. First, a series of convolutional layers analyzed the data for temporal features. Second, all electrodes were analyzed using a convolutional layer with kernel size equal to the number of electrodes, followed by upsampling to the correct number of electrodes by a convolutional transpose layer. Third, convolutional transpose layers assembles the signals. Fourth the network ends with a convolutional layer that merges all filters. LeakyReLU activations follow most convolutional layers. A schematic of the data flow through the network is shown below, illustrating how temporal and spatial dimensions are compressed/decompressed.
 
 <p align="center">
-<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/network_data_flow.png" width="50%">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/network_data_flow.png" width="75%">
 </p>
 
 For example, the structure of GN1 was:
