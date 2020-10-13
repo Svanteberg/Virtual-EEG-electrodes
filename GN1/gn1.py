@@ -1,8 +1,3 @@
-# gpu imports
-import os
-os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"]="1"
-
 # tensorflow imports
 from tensorflow.keras.layers import LeakyReLU, Input, Conv2D, Conv2DTranspose
 from tensorflow.keras.models import Model
