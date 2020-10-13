@@ -124,7 +124,7 @@ Temporal decoder
 ```
     def deconv(self,x):
         # deconvolutional block
-        for i in range(self.layers):
+        for i in range(4):
             x = Conv2DTranspose(filters = 32*2**(3 - i), kernel_size = (1, 3), strides = (1, 2), padding = 'same')(x)
             if i != 3:
                 x = LeakyReLU(alpha = 0.2)(x)
