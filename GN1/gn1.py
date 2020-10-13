@@ -127,14 +127,14 @@ class generator_1():
 
     # building blocks
 
-    def conv(self,x):
+    def conv(self, x):
         # convolutional block
         for i in range(self.layers):
             x = Conv2D(filters = 32*2**i, kernel_size = (1, 3), strides = (1, self.strides), padding = 'same')(x)
             x = LeakyReLU(alpha = 0.2)(x)
         return x
 
-    def deconv(self,x):
+    def deconv(self, x):
         # deconvolutional block
         for i in range(self.layers):
             x = Conv2DTranspose(filters = 32*2**(self.layers-i), kernel_size = (1, 3), strides = (1, self.strides), padding = 'same')(x)
@@ -182,7 +182,7 @@ class generator_1():
                                                     y = real_eeg[:, self.output_electrodes, :, :])
                 if loop_index == len(self.train_subjects) - 1:
                     self.mae_train[epoch], self.mae_val[epoch] = self.training_test()
-                    print('--- Epoch:',epoch+1,'--- Training MAE:',self.mae_train[epoch],'µV --- Validation MAE:',self.mae_val[epoch],'µV ---')
+                    print('--- Epoch:', epoch+1, '--- Training MAE:', self.mae_train[epoch], 'µV --- Validation MAE:',self.mae_val[epoch], 'µV ---')
         # (test and) save
         if self.use_test_set: # perform evaluation with test data
             mae_test, test_eeg = self.final_test()
@@ -239,7 +239,7 @@ class generator_1():
         # calculate total means
         mae_train = np.round(np.mean(mae_train), 1)
         mae_test = np.round(np.mean(mae_test), 1)
-        return mae_train,mae_test
+        return mae_train, mae_test
 
     def final_test(self, num = 5000):
         # initiate variabels for results
@@ -265,7 +265,7 @@ class generator_1():
 
 #================================data handling==========================================
 
-    def generate_eeg(self,dataset, subject_num):
+    def generate_eeg(self, dataset, subject_num):
         # train, validate, or test?
         if dataset == 0:
             subject = self.train_subjects[subject_num]
@@ -277,7 +277,7 @@ class generator_1():
             subject = self.test_subjects[subject_num]
             indices = self.test_indices[subject_num]
         # initialize out data
-        eeg = np.zeros((21,2560))
+        eeg = np.zeros((21, 2560))
         # randomize recording order (if multiple recordings)
         recording = random.sample(range(len(indices)), len(indices))
         # choose epoch of recording, skip first and last couple of epochs to avoid artefacts
@@ -296,7 +296,7 @@ class generator_1():
             data = np.concatenate((epoch_1, epoch_2), axis = 1)
             try_count += 1
             if try_count > 100:
-                # if the max number of tries for a recording is reach, the search is continued in the next recording
+                # if the max number of tries for a recording is reached, the search is continued in the next recording
                 recording_count += 1
                 try_count = 0
         if np.max(np.abs(data)) > self.threshold:
@@ -309,12 +309,12 @@ class generator_1():
             eeg = data[:, position:(position + 2560)]
             eeg = eeg[np.newaxis, :, :, np.newaxis]
             if self.use_data_normalization:
-                eeg,norm = self.normalize_std(eeg)
+                eeg, norm = self.normalize_std(eeg)
             else:
                 norm = 1
         return eeg, norm
 
-    def normalize_std(self,data):
+    def normalize_std(self, data):
         # normalizes the amplitude to a standard deviation of one
         norm = np.std(data)
         return data/norm, norm
