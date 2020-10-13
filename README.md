@@ -14,7 +14,7 @@ Electrodes are placed according to the international 10-20 system (Jasper, Elect
 
 The *networks* were of *generative* character and are here referred to as GN1, GN2, and GN3.
 
-#### GN1
+#### [GN1](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1)
 
 This network upsampled from 4 to 21 electrodes (17 recreated as output from the network). Here, the electrode density was very low, the distances were large and the problem was hence ill posed.
 
