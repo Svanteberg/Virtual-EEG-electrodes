@@ -94,6 +94,8 @@ The data was split in a 80, 10 and 10 percent distribution for training, validat
 
 ## Network architecture
 
+The network analyzed temporal and spatial dimensions separately. First, a series of convolutional layers analyzed the data for temporal features. Second, all electrodes were analyzed using a convolutional layer with kernel size equal to the number of electrodes, followed by upsampling to the correct number of electrodes by a convolutional transpose layer. Third, convolutional transpose layers generates the signals. Fourth the network ends with a convolutional layer that merges all filters. LeakyReLU activations follow most convolutional layers.
+
 Encoder block:
 ```
     def conv(self,x):
@@ -103,6 +105,15 @@ Encoder block:
             x = LeakyReLU(alpha = 0.2)(x)
         return x
 ```
+
+Spatial analysis:
+```
+        x = Conv2D(1024, kernel_size = (self.shape_in[0], 1), strides = 1, padding = 'valid')(x)
+        x = LeakyReLU(alpha = 0.2)(x)
+        x = Conv2DTranspose(filters = 256, kernel_size = (self.shape_out[0], 1), strides = 1, padding = 'valid')(x)
+        x = LeakyReLU(alpha = 0.2)(x)
+```
+
 Decoder
 ```
     def deconv(self,x):
@@ -112,13 +123,6 @@ Decoder
             if i != self.layers-1:
                 x = LeakyReLU(alpha = 0.2)(x)
         return x
-```
-Spatial analysis:
-```
-        x = Conv2D(1024, kernel_size = (self.shape_in[0], 1), strides = 1, padding = 'valid')(x)
-        x = LeakyReLU(alpha = 0.2)(x)
-        x = Conv2DTranspose(filters = 256, kernel_size = (self.shape_out[0], 1), strides = 1, padding = 'valid')(x)
-        x = LeakyReLU(alpha = 0.2)(x)
 ```
 
 Assembled network:
