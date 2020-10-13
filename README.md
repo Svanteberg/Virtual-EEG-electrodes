@@ -12,7 +12,7 @@ Electrodes are placed according to the international 10-20 system (Jasper, Elect
 
 ### The networks
 
-The *networks* were of *generative* character and are here referred to as GN1, GN2, and GN3.
+The *networks* were of *generative* character and are here referred to as [GN1](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1), [GN2](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2), and [GN3](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3).
 
 #### [GN1](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1)
 
