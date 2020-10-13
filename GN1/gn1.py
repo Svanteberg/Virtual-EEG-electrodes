@@ -93,7 +93,7 @@ class generator_1():
         # load subject data
         with open('data/256/subject_folders', 'rb') as fp:
             self.subjects = pickle.load(fp)
-        self.file_indices = np.load('data/256/indices.npy', allow_pickle=True)
+        self.file_indices = np.load('data/256/indices.npy', allow_pickle = True)
         # distribute subjects into training, validation and test set
         self.subject_distribution = (0.8, 0.9, 1)
         self.train_subjects = []
@@ -132,8 +132,8 @@ class generator_1():
     def deconv(self, x):
         # deconvolutional block
         for i in range(self.layers):
-            x = Conv2DTranspose(filters = 32*2**(self.layers-i), kernel_size = (1, 3), strides = (1, self.strides), padding = 'same')(x)
-            if i != self.layers-1:
+            x = Conv2DTranspose(filters = 32*2**(self.layers - i - 1), kernel_size = (1, 3), strides = (1, self.strides), padding = 'same')(x)
+            if i != self.layers - 1:
                 x = LeakyReLU(alpha = 0.2)(x)
         return x
 
@@ -181,14 +181,14 @@ class generator_1():
         # (test and) save
         if self.use_test_set: # perform evaluation with test data
             mae_test, test_eeg = self.final_test()
-            print('-------------------- Final testing MAE:',mae_test,'µV -------------------------')
+            print('-------------------- Final testing MAE:', mae_test, 'µV -------------------------')
             print('*********************** Saving results ****************************')
             # save model
             self.generator.save(self.directory + '/gn1_model.h5')
             # save training/validation/test losses
-            np.save(self.directory + '/mae_train.npy',self.mae_train)
-            np.save(self.directory + '/mae_val.npy',self.mae_val)
-            np.save(self.directory + '/mae_test.npy',mae_test)
+            np.save(self.directory + '/mae_train.npy', self.mae_train)
+            np.save(self.directory + '/mae_val.npy', self.mae_val)
+            np.save(self.directory + '/mae_test.npy', mae_test)
             # save eegs
             np.save(self.directory + '/test_eeg.npy',test_eeg)
         else: # skip evaluation with test data
@@ -196,8 +196,8 @@ class generator_1():
             # save model
             self.generator.save(self.directory + '/gn1_model.h5')
             # save training/validation losses
-            np.save(self.directory + '/mae_train.npy',self.mae_train)
-            np.save(self.directory + '/mae_val.npy',self.mae_val)
+            np.save(self.directory + '/mae_train.npy', self.mae_train)
+            np.save(self.directory + '/mae_val.npy', self.mae_val)
 
 #======================================test functions=========================================
 
@@ -215,7 +215,7 @@ class generator_1():
         for _ in np.arange(num):
             # load train data
             train_subject = random.sample(range(len(self.train_subjects)), 1)[0]
-            eeg_train,norm_train = self.generate_eeg(0,train_subject)
+            eeg_train,norm_train = self.generate_eeg(0, train_subject)
             while norm_train == 0:
                 train_subject = random.sample(range(len(self.train_subjects)), 1)[0]
                 eeg_train,norm_train = self.generate_eeg(0, train_subject)
@@ -229,8 +229,8 @@ class generator_1():
             eeg_synthetic_train = self.generator.predict(eeg_train[:, self.input_electrodes, :, :])
             eeg_synthetic_test = self.generator.predict(eeg_test[:, self.input_electrodes, :, :])
             # calculate MAE for training and test examples
-            mae_train.append(self.mae(np.reshape(eeg_train[:, self.output_electrodes, :, :],(17, 2560))*norm_train, np.reshape(eeg_synthetic_train, (17, 2560))*norm_train))
-            mae_test.append(self.mae(np.reshape(eeg_test[:, self.output_electrodes, :, :],(17, 2560))*norm_test ,np.reshape(eeg_synthetic_test, (17, 2560))*norm_test))
+            mae_train.append(self.mae(np.reshape(eeg_train[:, self.output_electrodes, :, :], (17, 2560))*norm_train, np.reshape(eeg_synthetic_train, (17, 2560))*norm_train))
+            mae_test.append(self.mae(np.reshape(eeg_test[:, self.output_electrodes, :, :], (17, 2560))*norm_test ,np.reshape(eeg_synthetic_test, (17, 2560))*norm_test))
         # calculate total means
         mae_train = np.round(np.mean(mae_train), 1)
         mae_test = np.round(np.mean(mae_test), 1)
@@ -251,7 +251,7 @@ class generator_1():
             # generate artificial EEG:s
             eeg_synthetic_test = self.generator.predict(eeg_test[:, self.input_electrodes, :, :])
             # calculate MAE for training and test examples
-            mae_test.append(self.mae(np.reshape(eeg_test[:, self.output_electrodes, :, :],(17, 2560))*norm_test ,np.reshape(eeg_synthetic_test, (17, 2560))*norm_test))
+            mae_test.append(self.mae(np.reshape(eeg_test[:, self.output_electrodes, :, :], (17, 2560))*norm_test ,np.reshape(eeg_synthetic_test, (17, 2560))*norm_test))
             # store eeg:s
             eeg_data.append([np.reshape(eeg_synthetic_test, (17, 2560))*norm_test, np.reshape(eeg_test, (21, 2560))*norm_test])
         # calculate total means
