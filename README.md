@@ -100,17 +100,17 @@ Encoder block:
 ```
     def conv(self,x):
         # convolutional block
-        for i in range(self.layers):
-            x = Conv2D(filters = 32*2**i, kernel_size = (1, 3), strides = (1, self.strides), padding = 'same')(x)
+        for i in range(4):
+            x = Conv2D(filters = 32*2**i, kernel_size = (1, 3), strides = (1, 2), padding = 'same')(x)
             x = LeakyReLU(alpha = 0.2)(x)
         return x
 ```
 
 Spatial analysis:
 ```
-        x = Conv2D(1024, kernel_size = (self.shape_in[0], 1), strides = 1, padding = 'valid')(x)
+        x = Conv2D(1024, kernel_size = (4, 1), strides = 1, padding = 'valid')(x)
         x = LeakyReLU(alpha = 0.2)(x)
-        x = Conv2DTranspose(filters = 256, kernel_size = (self.shape_out[0], 1), strides = 1, padding = 'valid')(x)
+        x = Conv2DTranspose(filters = 256, kernel_size = (17, 1), strides = 1, padding = 'valid')(x)
         x = LeakyReLU(alpha = 0.2)(x)
 ```
 
@@ -119,8 +119,8 @@ Decoder
     def deconv(self,x):
         # deconvolutional block
         for i in range(self.layers):
-            x = Conv2DTranspose(filters = 32*2**(self.layers - i - 1), kernel_size = (1, 3), strides = (1, self.strides), padding = 'same')(x)
-            if i != self.layers-1:
+            x = Conv2DTranspose(filters = 32*2**(3 - i), kernel_size = (1, 3), strides = (1, 2), padding = 'same')(x)
+            if i != 3:
                 x = LeakyReLU(alpha = 0.2)(x)
         return x
 ```
