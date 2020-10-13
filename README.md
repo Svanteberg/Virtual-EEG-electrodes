@@ -91,7 +91,7 @@ e.g.
 so that each row in the index list corresponds to a subject and the numbers in each bracket correspond to the start and end of an EEG recording. *In hindsight, a better option may be to store each recording in individual folders. This would reduce the risk of accidently concatenate files from different recordings due to programming errors or faulty information in the index file.*
 
 #### Data format
-Each EEG example that the networks process were 10 s in duration, or 2,560 samples. The numpy files hence had the size (21, 2560). The electrode order must be: FP1, F7 ,T3, T5, Fp2, F8, T4, T6, F3, C3, P3, O1, F4, C4, P4, O2, A1, A2, FZ, CZ, PZ.
+Each EEG example that the networks process were 10 s in duration, or 2,560 samples. The numpy files hence had the size (21, 2560). The electrode order was (and must be for the scripts to work): FP1, F7 ,T3, T5, Fp2, F8, T4, T6, F3, C3, P3, O1, F4, C4, P4, O2, A1, A2, FZ, CZ, PZ.
 
 #### Data split
 The data was split in a 80, 10 and 10 percent distribution for training, validation and testing. The distribution was with regard to the number of subjects to keep the data sets disjoint.
