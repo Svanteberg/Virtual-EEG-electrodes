@@ -16,7 +16,7 @@ The *networks* were of *generative* character and are here referred to as GN1, G
 
 #### GN1
 
-This network upsampled from 4 to 21 electrodes (17 recreated as output from the network). Here, the electrode density is very low, the distances are large and the problem is hence ill posed.
+This network upsampled from 4 to 21 electrodes (17 recreated as output from the network). Here, the electrode density was very low, the distances were large and the problem was hence ill posed.
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20_4-17.png" width="50%">
@@ -24,7 +24,7 @@ This network upsampled from 4 to 21 electrodes (17 recreated as output from the 
 
 #### GN2
 
-This network upsampled from 14 to 21 electrodes (7 recreated as output from the network). For this case, the electrode density is higher, the electrodes have an even distribution and the recreated values lie within a field of known values (in reality, the density decreases in radial direction due to the spherical geometry). The conditions for finding a solution for the problem is thus more favorable.
+This network upsampled from 14 to 21 electrodes (7 recreated as output from the network). For this case, the electrode density was higher, the electrodes had an even distribution and the recreated values lay within a field of known values (in reality, the density decreases in radial direction due to the spherical geometry). The conditions for finding a solution for the problem was thus more favorable.
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20_14-7.png" width="50%">
@@ -32,7 +32,7 @@ This network upsampled from 14 to 21 electrodes (7 recreated as output from the 
 
 #### GN3
 
-This network recreates the value of any one blocked channel. The signal of the blocked channel is replaced by low amplitude white noise. In addition to recreating the signal, the network therefore also has to learn to detect which channel is missing.
+This network recreated the value of any one blocked channel. The signal of the blocked channel was replaced by low amplitude white noise. In addition to recreating the signal, the network therefore also had to learn to detect which channel was missing.
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/movie_gn3.gif" width="50%">
@@ -44,7 +44,7 @@ An example of the training progression for GN1 of the first 0 to 200 examples is
 
 ## Data
 
-The EEG data from the published data base created at the Temple University Hospital (TUH), Philadelphia (Obeid & Picone, Frontiers of neuroscience 2016, 10:1-5) was used for this study. The TUH EEG Corpus (v1.1.0) with average reference was used (downloaded during 17-21 January 2019).
+The EEG data from the published database created at the Temple University Hospital (TUH), Philadelphia (Obeid & Picone, Frontiers of neuroscience 2016, 10:1-5) was used for this study. The TUH EEG Corpus (v1.1.0) with average reference was used (downloaded during 17-21 January 2019).
 
 The Python library ‘pyEDFlib’ (Nahrstaedt & Lee-Messer, https://github.com/holgern/pyedflib) was used to extract EEG data. A total of 11,163 recordings (roughly 5,144 hours, from 1,385 subjects) with duration > 300 seconds and sampled at 256 Hz was extracted from the data set. The data was bandpass filtered between 0.3 Hz and 40 Hz using second-degree Butterworth filters. A 60 Hz notch filter was used to remove residual AC-noise. Filtering was applied with zero phase shift.
 
@@ -91,7 +91,7 @@ e.g.
 so that each row in the index list corresponds to a subject and the numbers in each bracket correspond to the start and end of an EEG recording. *In hindsight, a better option may be to store each recording in individual folders. This would reduce the risk of accidently concatenate files from different recordings due to programming errors or faulty information in the index file.*
 
 #### Data format
-Each EEG example that the networks process are 10 s in duration, or 2560 samples. The electrode order must be: FP1, F7 ,T3, T5, Fp2, F8, T4, T6, F3, C3, P3, O1, F4, C4, P4, O2, A1, A2, FZ, CZ, PZ.
+Each EEG example that the networks process were 10 s in duration, or 2560 samples. The numpy files hence had the size (21,2560). The electrode order must be: FP1, F7 ,T3, T5, Fp2, F8, T4, T6, F3, C3, P3, O1, F4, C4, P4, O2, A1, A2, FZ, CZ, PZ.
 
 #### Data split
 The data was split in a 80, 10 and 10 percent distribution for training, validation and testing. The distribution was with regard to the number of subjects to keep the data sets disjoint.
