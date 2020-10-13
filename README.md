@@ -22,7 +22,7 @@ This network upsampled from 4 to 21 electrodes (17 recreated as output from the 
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20_4-17.png" width="50%">
 </p>
 
-#### GN2
+#### [GN2](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2)
 
 This network upsampled from 14 to 21 electrodes (7 recreated as output from the network). For this case, the electrode density was higher, the electrodes had an even distribution and the recreated values lay within a field of known values (in reality, the density decreases in radial direction due to the spherical geometry). The conditions for finding a solution for the problem was thus more favorable.
 
@@ -30,7 +30,7 @@ This network upsampled from 14 to 21 electrodes (7 recreated as output from the 
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20_14-7.png" width="50%">
 </p>
 
-#### GN3
+#### [GN3](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3)
 
 This network recreated the value of any one blocked channel. The signal of the blocked channel was replaced by low amplitude white noise. In addition to recreating the signal, the network therefore also had to learn to detect which channel was missing.
 
