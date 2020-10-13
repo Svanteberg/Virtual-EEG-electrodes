@@ -130,7 +130,7 @@ Temporal decoder
 Assembled network:
 ```
     def generator_model(self):
-        input_eeg = Input(shape = self.shape_in)
+        input_eeg = Input(shape = (4,2560,1))
         # temporal encoder
         x = self.conv(input_eeg)
         # spatial analysis
