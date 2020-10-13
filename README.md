@@ -94,6 +94,52 @@ The data was split in a 80, 10 and 10 percent distribution for training, validat
 
 ## Network architecture
 
+Encoder block:
+```
+    def conv(self,x):
+        # convolutional block
+        for i in range(self.layers):
+            x = Conv2D(filters = 32*2**i, kernel_size = (1, 3), strides = (1, self.strides), padding = 'same')(x)
+            x = LeakyReLU(alpha = 0.2)(x)
+        return x
+```
+Decoder
+```
+    def deconv(self,x):
+        # deconvolutional block
+        for i in range(self.layers):
+            x = Conv2DTranspose(filters = 32*2**(self.layers - i - 1), kernel_size = (1, 3), strides = (1, self.strides), padding = 'same')(x)
+            if i != self.layers-1:
+                x = LeakyReLU(alpha = 0.2)(x)
+        return x
+```
+Spatial analysis:
+```
+        x = Conv2D(1024, kernel_size = (self.shape_in[0], 1), strides = 1, padding = 'valid')(x)
+        x = LeakyReLU(alpha = 0.2)(x)
+        x = Conv2DTranspose(filters = 256, kernel_size = (self.shape_out[0], 1), strides = 1, padding = 'valid')(x)
+        x = LeakyReLU(alpha = 0.2)(x)
+```
+
+Assembled network:
+```
+    def generator_model(self):
+        input_eeg = Input(shape = self.shape_in)
+        # temporal encoder
+        x = self.conv(input_eeg)
+        # spatial analysis
+        x = Conv2D(1024, kernel_size = (self.shape_in[0], 1), strides = 1, padding = 'valid')(x)
+        x = LeakyReLU(alpha = 0.2)(x)
+        x = Conv2DTranspose(filters = 256, kernel_size = (self.shape_out[0], 1), strides = 1, padding = 'valid')(x)
+        x = LeakyReLU(alpha = 0.2)(x)
+        # temporal decoder
+        x = self.deconv(x)
+        # merging all filters
+        x = Conv2D(1,kernel_size = (1, 1), strides = 1)(x)
+        return Model(inputs = input_eeg, outputs = x, name = 'generator')
+```
+
+
 ## Training schedule
 
 An epoch fo training was defined as training with one example from each subject in the training set. For each epoch of training, the training order of the subjects were randomized
