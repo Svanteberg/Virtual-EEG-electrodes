@@ -100,7 +100,8 @@ def add_artifacts(EEG):
 
 def source(duration):
     '''
-    generates an EEG signal.
+    generates an EEG signal. (adapted from: Bai et al., ”Nonlinear Markov process amplitude EEG model for nonlinear coupling interaction of spontaneous EEG,” 
+    IEEE Transactions of biomedicine engineering, vol. 47, nr 9, pp. 1141-1146, 2000)
     '''
 	# init variables and parameters
     num = np.random.randint(1, 4)
