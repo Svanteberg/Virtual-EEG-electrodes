@@ -190,4 +190,5 @@ def plot_example():
 
 # set duration of EEGs and generate data
 duration = 768000 # (5 mins)
-generate_data(10, duration)
+num = 10 # number of subjects, 1 - 3 EEGs of length = 'duration' will be created
+generate_data(num, duration)
