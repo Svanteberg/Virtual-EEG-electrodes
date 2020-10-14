@@ -50,7 +50,7 @@ The Python library ‘pyEDFlib’ (Nahrstaedt & Lee-Messer, https://github.com/h
 
 ### Data organisation
 
-*The developed scripts require that the data is organized in a specific way. This may well be the main challenge for anyone attempting to use the scripts, and it will likely save time to instead modify them to accommodate your own data structure.*
+*The developed scripts require that the data is organized in a specific way. This may well be the main challenge for anyone attempting to use the scripts, and it will likely save time to instead modify them to accommodate your own data structure. An example, containing artificial EEG data, is provided [here](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/Artificial_EEG_for_testing_scripts). A script for generating more data is also privoded.*
 
 The data was organized with each subject having a folder containing one or more of their respective EEG recordings. All EEGs in each folder were divided into numpy files of 10 s epochs and numbered in consecutive order. 
 
