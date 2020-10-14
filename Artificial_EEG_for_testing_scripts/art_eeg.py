@@ -165,7 +165,7 @@ def generate_data(num, duration):
             EEG = generate_eeg()
             epochs = int(np.shape(EEG)[1]/2560)
             for j in range(epochs):
-                np.save(directory + '/' + folder_name+  '/eeg_' + str(last + j) + '.npy', EEG[:,2560*j:2560*(j + 1)])
+                np.save(directory + '/' + folder_name+  '/eeg_' + str(last + j) + '.npy', EEG[:, 2560*j:2560*(j + 1)])
             indices.append([last, last + epochs - 1])
             last += epochs
         file_indices.append(indices)
@@ -184,7 +184,7 @@ def plot_example():
     for i in range(21):
         pl.plot(np.arange(2560)/256, F[i] + 50*i, color = 'black', linewidth = 0.5)
     pl.yticks(np.arange(0, 21*50, 50), leads)
-    pl.xticks([0,1,2,3,4,5,6,7,8,9,10])
+    pl.xticks([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     pl.gca().invert_yaxis()
     pl.tight_layout()
     pl.show()
