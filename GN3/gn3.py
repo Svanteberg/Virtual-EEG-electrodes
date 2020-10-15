@@ -1,8 +1,3 @@
-# gpu imports
-import os
-os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"]="1"
-
 # tensorflow imports
 from tensorflow.keras.layers import LeakyReLU, Input, Conv2D, Conv2DTranspose
 from tensorflow.keras.models import Model
@@ -28,7 +23,7 @@ The object creates and trains a convolutional neural network for upsampling EEG 
 Input electrodes: FP1, F7 ,T3, T5, Fp2, F8, T4, T6, F3, C3, P3, O1, F4, C4, P4, O2, A1, A2, FZ, CZ, PZ.
 Output electrodes: one out of one missing input electrode
 
-The results are saved in a directory: results -> date + start time + 'gn3'; e.g., results/20201012-114948-gn1/.
+The results are saved in a directory: results -> date + start time + 'gn3'; e.g., results/20201012-114948-gn3/.
 If the directory does not exist, it will be created. The following will be saved:
 
 - training MAE for each epoch based on 1000 examples (mae_train.npy)
