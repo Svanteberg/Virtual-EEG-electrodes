@@ -2,7 +2,7 @@
 This network recreates any single missing electrode:
 
 <p align="center">
-<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20_21-1.gif" width="50%">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/movie_gn3.gif" width="50%">
 </p>
 
 ## Simple version
