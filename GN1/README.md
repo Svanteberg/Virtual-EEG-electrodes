@@ -5,7 +5,7 @@ This network upsamples from 4 to 21 electrodes (17 recreated as output from the 
 </p>
 
 
-The file `GN1.py` contain a simple version for training GN1. It will train for 1,000 epochs, printing the MAE for 1,000 examples from the training and validation dataset at each epoch. When training is done, it will generate EEG from 5000 examples from the test dataset and save:
+The file `gn1.py` contain a simple version for training GN1. It will train for 1,000 epochs, printing the MAE for 1,000 examples from the training and validation dataset at each epoch. When training is done, it will generate EEG from 5000 examples from the test dataset and save:
 
 - MAE of training data for all epochs
 - MAE of validation data for all epochs
