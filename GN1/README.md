@@ -22,6 +22,8 @@ A tkinter based GUI version is available, `gn1_gui.py`, where training progressi
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/gn1_gui_screenshoot.png" width="100%">
 </p>
 
+In the EEG examples, the recreated signals are in black with the corresponding original signals in blue, and the input signals are in red.
+
 ## Visualizing data
 A simple EEG viewer is provided in the ``plot_eeg.py`` file for visualizing the saved EEG examples.
 
