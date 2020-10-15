@@ -28,5 +28,5 @@ In the EEG examples, the recreated signals are in black with the corresponding o
 A simple EEG viewer is provided in the ``plot_eeg.py`` file for visualizing the saved EEG examples.
 
 <p align="center">
-<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/eeg_gui _gn2_results_screenshot.png" width="100%">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/eeg_gui_gn2_results_screenshot.png" width="100%">
 </p>
