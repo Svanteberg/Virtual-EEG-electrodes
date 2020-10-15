@@ -85,7 +85,7 @@ class generator_2():
         self.layers = 4
         self.strides = 2
         # training parameters
-        self.epochs = 5
+        self.epochs = 1000
         self.use_test_set = True             # set to 'False' if not using test dataset
         # data generation parameters
         self.threshold = 500                # max absolute amplitude (µV) of data
