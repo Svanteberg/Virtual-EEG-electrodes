@@ -1,14 +1,8 @@
 #==================Imports=============================================
-# gpu imports
-import os
-os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"]="0"
-
 from tensorflow.keras.layers import LeakyReLU, Layer, Input, Conv2D, Conv2DTranspose
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.models import Model
 
-from collections import OrderedDict
 import numpy as np
 import random
 import pickle
@@ -66,7 +60,6 @@ class generator_1():
             else:
                 self.test_subjects.append(self.subjects[i])
                 self.test_indices.append(self.file_indices[i])
-        print('===',len(self.train_subjects),len(self.val_subjects),len(self.test_subjects),'===')
 
 #==================== generator network functions ===========================================
 
@@ -110,7 +103,6 @@ class generator_1():
         # create generator network
         self.generator = self.generator_model()
         self.generator.compile(loss='mae',optimizer=Adam(1e-4, 0.5, 0.999))
-        print(self.generator.summary())
         # create directory for saving results
         self.directory = os.path.join('results',time.strftime('%Y%m%d-%H%M%S', time.localtime()) + '-' + sys.argv[0][:-3])
         if not os.path.exists(self.directory):
