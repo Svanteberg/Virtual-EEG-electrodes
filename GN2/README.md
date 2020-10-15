@@ -19,7 +19,7 @@ The file `gn2.py` contain a simple version for training GN2. It will train for 1
 A tkinter based GUI version is available, `gn2_gui.py`, where training progression, MAE of individual electrodes, and EEG examples are plotted intermittently.
 
 <p align="center">
-<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/gn2_gui_screenshoot.png" width="100%">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/gn2_gui_screenshot.png" width="100%">
 </p>
 
 In the EEG examples, the recreated signals are in black with the corresponding original signals in blue, and the input signals are in red.
