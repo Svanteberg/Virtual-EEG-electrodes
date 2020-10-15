@@ -1,5 +1,5 @@
 # GN2
-This network upsamples from 4 to 21 electrodes (17 recreated as output from the network):
+This network upsamples from 14 to 21 electrodes (7 recreated as output from the network):
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/10-20_14-7.png" width="50%">
