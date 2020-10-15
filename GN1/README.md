@@ -15,4 +15,4 @@ The file `GN1.py` contain a simple version for training GN1. It will train for 1
 
 A GUI version, where results and EEG examples are plotted intermittently, will also be available.
 
-A simple EEG viewer is provided in the ``plot_eeg.py`` file for plotting the saved EEG examples.
+A simple EEG viewer is provided in the ``plot_eeg.py`` file for visualizing the saved EEG examples.
