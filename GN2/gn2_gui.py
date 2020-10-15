@@ -16,7 +16,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 from tkinter import *
 
-class generator_1():
+class generator_2():
     def __init__(self):
 
         # input & output shapes
@@ -398,12 +398,12 @@ class labelWithOption(object):
         self.oM.config(width = width, bg = color)
         self.oM.grid(row = row + 1, column = column, padx = 5, pady = 5)
 
-G = generator_1()
+G = generator_2()
 # ***** Init GUI *****
 color = '#dadada'
 G.root = Tk()
 G.root.configure(background = color)
-G.root.title('Upsampling from 4 to 17 electrodes')
+G.root.title('Upsampling from 14 to 21 electrodes')
 mainFrame = Frame(G.root, background = color)
 mainFrame.pack(fill = BOTH)
 topFrame = Frame(mainFrame, background = color)
