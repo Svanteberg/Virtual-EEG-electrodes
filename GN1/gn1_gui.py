@@ -328,7 +328,7 @@ class generator_1():
         mae_train,mae_val,test_field = self.training_test()
         self.mae_train.append(mae_train)
         self.mae_val.append(mae_val)
-        # plto training progression
+        # plot training progression
         self.trainingPlot.ax.cla()
         self.trainingPlot.ax.plot(np.arange(len(self.mae_train)), self.mae_train, color = 'tab:blue', label = 'MAE training')
         self.trainingPlot.ax.plot(np.arange(len(self.mae_val)), self.mae_val, color = 'tab:orange', label = 'MAE validation')
@@ -343,7 +343,7 @@ class generator_1():
         self.trainingPlot.ax.minorticks_on()
         self.trainingPlot.ax.tick_params(right=False, labelright=False)
         self.trainingPlot.canvas.draw()
-        # field
+        # plot MAE values for individual electrodes
         self.plot_field(test_field)
 
     def plot_field(self,mat):
@@ -363,6 +363,7 @@ class generator_1():
 #=====================misc========================================
 
     def print_eta(self,start_time,epoch,loop_index):
+        # calculates ETA for training
         passed_time = time.time() - start_time
         eta = round((passed_time/(epoch*len(self.train_subjects) + loop_index + 1))*(self.epochs*len(self.train_subjects) - (epoch*len(self.train_subjects) + loop_index + 1)))
         passed_time_string = str(datetime.timedelta(seconds = round(passed_time)))
