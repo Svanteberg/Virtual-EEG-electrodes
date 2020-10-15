@@ -5,3 +5,9 @@ The script `art_eeg.py` can be used to generate more data. The data is simple, c
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/example_artificial_eeg.png" width="100%">
 </p>
+
+The file `plot_original_eeg.py` can be used to visualize the data (or any EEG saved in the same manner, i.e., size (21,2560) and named: eeg_0.npy, eeg_1.npy, ...)
+
+<p align="center">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/plot_original_eeg.png" width="100%">
+</p>
