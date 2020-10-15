@@ -24,3 +24,7 @@ A tkinter based GUI version is available, `gn1_gui.py`, where training progressi
 
 ## Visualizing data
 A simple EEG viewer is provided in the ``plot_eeg.py`` file for visualizing the saved EEG examples.
+
+<p align="center">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/eeg_gui_results_screenshot.png" width="100%">
+</p>
