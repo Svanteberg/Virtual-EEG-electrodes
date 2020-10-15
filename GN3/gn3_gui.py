@@ -1,14 +1,8 @@
 #==================Imports=============================================
-# gpu imports
-import os
-os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"]="0"
-
 from tensorflow.keras.layers import LeakyReLU, Layer, Input, Conv2D, Conv2DTranspose
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.models import Model
 
-from collections import OrderedDict
 import numpy as np
 import random
 import pickle
@@ -30,8 +24,6 @@ class generator_3():
         self.shape_in = (21, 2560, 1)
         self.shape_out = (1, 2560, 1)
         # electrodes used for input & output
-        self.input_electrodes = [0, 1, 3, 4, 5, 7, 9, 11, 13, 15, 16, 17, 18, 20]
-        self.output_electrodes = [2, 6, 8, 10, 12, 14, 19]
         self.labels = ['Fp1', 'F7', 'T3', 'T5', 'Fp2', 'F8', 'T4', 'T6', 'F3', 'C3', 'P3', 'O1', 'F4', 'C4', 'P4', 'O2', 'A1', 'A2', 'Fz', 'Cz', 'Pz']
         self.row_map = [0, 1, 2, 3, 0, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 2, 2, 1, 2, 3]
         self.col_map = [2, 1, 1, 1, 4, 5, 5, 5, 2, 2, 2, 2, 4, 4, 4, 4, 0, 6, 3, 3, 3]
