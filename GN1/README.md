@@ -13,6 +13,10 @@ The file `GN1.py` contain a simple version for training GN1. It will train for 1
 - The 5,000 generated and original examples
 - The resulting network model
 
-A GUI version, where results and EEG examples are plotted intermittently, will also be available.
+A GUI version is available, `gn1_gui.py`, where training progression, MAE of individual electrodes, and EEG examples are plotted intermittently.
+
+<p align="center">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/gn1_gui_screenshot.png" width="100%">
+</p>
 
 A simple EEG viewer is provided in the ``plot_eeg.py`` file for visualizing the saved EEG examples.
