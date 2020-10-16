@@ -18,8 +18,6 @@ from tkinter import *
 
 class generator_3():
     def __init__(self):
-
-        # input & output shapes
         # input & output shapes
         self.shape_in = (21, 2560, 1)
         self.shape_out = (1, 2560, 1)
