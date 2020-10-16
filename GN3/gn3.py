@@ -26,10 +26,10 @@ Output electrodes: one out of one missing input electrode
 The results are saved in a directory: results -> date + start time + 'gn3'; e.g., results/20201012-114948-gn3/.
 If the directory does not exist, it will be created. The following will be saved:
 
-- training MAE for each epoch based on 1000 examples (mae_train.npy)
-- valdiation MAE for each epoch based on 1000 examples (mae_val.npy)
-- test MAE based on 5000 examples (mae_test.npy)
-- the 5000 examples used for testing (test_eeg.npy)
+- training MAE for each epoch based on 2,100 examples (mae_train.npy)
+- valdiation MAE for each epoch based on 2,100 examples (mae_val.npy)
+- test MAE based on 5,040 examples (mae_test.npy)
+- the 5,040 examples used for testing (test_eeg.npy)
 - model (gn1_model.h5)
 
 Note that all three datasets are used, so if you would like to test different architectures/hyperparameters before using the test dataset, 
@@ -42,7 +42,7 @@ it may be a better alternative to create your own organization and modify the sc
 
 The order of the electrodes must be: FP1, F7 ,T3, T5, Fp2, F8, T4, T6, F3, C3, P3, O1, F4, C4, P4, O2, A1, A2, FZ, CZ, PZ.
 
-Each example have the size (21,2560).
+Each example have the size (21, 2560).
 
 Each subject should have their own directory (subject_id below) containing EEG data. Here organized as:
 
