@@ -48,7 +48,7 @@ The directory [GN2](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/ma
 
 The directory [GN3](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3) contain the files: [gn3.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3.py), [gn3_gui.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3_gui.py), and [plot_eeg_gn3.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/plot_eeg_gn3.py).
 
-The first file is a simpler version for training the respective networks. The second a GUI version that show the training progression and intermittently show EEG examples. The third file is simple GUI for visualizing the resulting generated data and compare it to the original EEG.
+The first file is a simpler version for training the respective networks. The second a GUI version that shows the training progression and intermittently shows EEG examples. The third file is simple GUI for visualizing the resulting generated data and compare it to the original EEG.
 
 ## Data
 
