@@ -42,6 +42,10 @@ An example of the training progression for GN1 of the first 0 to 200 examples is
 
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/movie.gif" width="110%">
 
+The directory [GN1](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1) contain the files: [gn1.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1.py), [gn1_gui.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1_gui.py), and [plot_eeg_gn1.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/plot_eeg_gn1.py)
+The directory [GN2](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2) contain the files: [gn2.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2/gn2.py), [gn2_gui.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2/gn2_gui.py), and [plot_eeg_gn2.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2/plot_eeg_gn2.py)
+The directory [GN3](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3) contain the files: [gn3.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3.py), [gn3_gui.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3_gui.py), and [plot_eeg_gn3.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/plot_eeg_gn3.py)
+
 ## Data
 
 The EEG data from the published database created at the Temple University Hospital (TUH), Philadelphia (Obeid & Picone, Frontiers of neuroscience 2016, 10:1-5) was used for this study. The TUH EEG Corpus (v1.1.0) with average reference was used (downloaded during 17-21 January 2019).
