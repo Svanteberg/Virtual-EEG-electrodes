@@ -6,7 +6,7 @@ This network recreates any single missing electrode:
 </p>
 
 ## Simple version
-The file `gn3.py` contain a simple version for training GN3. It will train for 1,000 epochs, printing the MAE for 2,100 examples from the training and validation dataset at each epoch. When training is done, it will generate EEG from 5000 examples from the test dataset and save:
+The file `gn3.py` contain a simple version for training GN3. It will train for 1,000 epochs, printing the MAE for 2,100 (21 * 100) examples from the training and validation dataset at each epoch. When training is done, it will generate EEG from 5040 examples (21 * 240, repeated consecutive electrode order, new EEG for every example) from the test dataset and save:
 
 - MAE of training data for all epochs
 - MAE of validation data for all epochs
