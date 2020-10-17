@@ -1,6 +1,6 @@
 # Environments
 
-The code have been tested on several computers and their respective environment are provided in the yml-files.
+The code has been tested on several computers and their respective environment are provided in the yml-files.
 
 ### Computer 1
 
