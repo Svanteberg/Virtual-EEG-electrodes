@@ -4,6 +4,10 @@ The code have been tested on several computers and their respective environment 
 
 ### Computer 1
 
+environment_2.yml
+
+Uses tensorflow-gpu==1.10.1
+
 ### Computer 2
 
 environment_2.yml
@@ -15,3 +19,9 @@ Uses tensorflow-gpu==1.13.1. The scripts have to be modified by changing the imp
 environment_3.yml
 
 Uses tensorflow-gpu==2.1.0.
+
+### Computer 4
+
+environment_4.yml
+
+Uses tensorflow-gpu==2.0.0.
