@@ -90,7 +90,7 @@ To use a trained network of type GN1 on new EEG data, run
 To visualize the generated data, and to compare it to the original EEG data, run
 
  ```
-    python3.7 ???
+    python3.7 plot_eeg_gn1.py
  ```
 
 
