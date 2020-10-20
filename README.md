@@ -50,6 +50,51 @@ The directory [GN3](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/ma
 
 The first file is a simpler version for training the respective networks. The second a GUI version that shows the training progression and intermittently shows EEG examples. The third file is simple GUI for visualizing the resulting generated data and compare it to the original EEG.
 
+## Installing software and running scripts
+
+To use / train the networks, first install Anaconda, https://www.anaconda.com/products/individual , e.g. for Linux
+
+```wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
+chmod +x Anaconda3-2020.07-Linux-x86_64.sh
+./Anaconda3-2020.07-Linux-x86_64.sh
+```
+
+
+Then create an Anaconda environment from one of the available environment files
+
+```
+conda env create -f environment_1.yml
+```
+
+Activate the environment you just created
+
+```
+    conda activate root
+```
+
+Setup your EEG data according to the proposed organization, or create some artificial data using the available script
+
+To train a network of type GN1, run
+
+```
+    python3.7 gn1.py ???
+```
+
+To use a trained network of type GN1 on new EEG data, run
+
+```
+    python3.7 ???
+```
+
+To visualize the generated data, and to compare it to the original EEG data, run
+
+ ```
+    python3.7 ???
+ ```
+
+
+---
+
 ## Data
 
 The EEG data from the published database created at the Temple University Hospital (TUH), Philadelphia (Obeid & Picone, Frontiers of neuroscience 2016, 10:1-5) was used for this study. The TUH EEG Corpus (v1.1.0) with average reference was used (downloaded during 17-21 January 2019).
