@@ -54,16 +54,17 @@ The first file is a simpler version for training the respective networks. The se
 
 To use / train the networks, first install Anaconda, https://www.anaconda.com/products/individual , e.g. for Linux
 
-```wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
-chmod +x Anaconda3-2020.07-Linux-x86_64.sh
-./Anaconda3-2020.07-Linux-x86_64.sh
+```
+    wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
+    chmod +x Anaconda3-2020.07-Linux-x86_64.sh
+    ./Anaconda3-2020.07-Linux-x86_64.sh
 ```
 
 
 Then create an Anaconda environment from one of the available environment files
 
 ```
-conda env create -f environment_1.yml
+    conda env create -f environment_1.yml
 ```
 
 Activate the environment you just created
