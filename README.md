@@ -50,6 +50,8 @@ The directory [GN3](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/ma
 
 The first file is a simpler version for training the respective networks. The second a GUI version that shows the training progression and intermittently shows EEG examples. The third file is simple GUI for visualizing the resulting generated data and compare it to the original EEG.
 
+---
+
 ## Installing software and running scripts
 
 To use / train the networks, first install Anaconda, https://www.anaconda.com/products/individual , e.g. for Linux
@@ -150,6 +152,8 @@ Each EEG example that the networks process were 10 s in duration, or 2,560 sampl
 #### Data split
 The data was split in a 80, 10 and 10 percent distribution for training, validation and testing. The distribution was with regard to the number of subjects to keep the data sets disjoint.
 
+---
+
 ## Network architecture
 
 The network analyzed temporal and spatial dimensions separately. First, a series of convolutional layers analyzed the data for temporal features. Second, all electrodes were analyzed using a convolutional layer with kernel size equal to the number of electrodes, followed by upsampling to the correct number of electrodes by a convolutional transpose layer. Third, convolutional transpose layers assembles the signals. Fourth the network ends with a convolutional layer that merges all filters. LeakyReLU activations follow most convolutional layers. A schematic of the data flow through the network is shown below, illustrating how temporal and spatial dimensions are compressed/decompressed.
@@ -207,6 +211,7 @@ Assembled network:
         return Model(inputs = input_eeg, outputs = x, name = 'generator')
 ```
 
+---
 
 ## Training schedule
 
