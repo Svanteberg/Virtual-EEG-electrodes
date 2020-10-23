@@ -8,7 +8,7 @@ The script `art_eeg.py` can be used to generate more data. The data is simple, c
 
 The resulting data can be more or less realistic, but with a tendency to be monomorphic and rhythmic activity often having a relatively general distribution. It will have a simple statistic, is more well-behaved compared to most real data, and is easier to train a generative network with (but probably will not generalize well to real data).
 
-The file `plot_original_eeg.py` is a tkinter based simple GUI that can be used to visualize the data (or any EEG saved in the same manner, i.e., size (21, 2560) and named: eeg_0.npy, eeg_1.npy, ...)
+The file `plot_original_eeg.py` is a tkinter based simple GUI that can be used to visualize the data (or any EEG saved in the same manner, i.e., size (21, 2560), electrodes in correct order, and named: eeg_0.npy, eeg_1.npy, ...)
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/eeg_gui.png" width="100%">
