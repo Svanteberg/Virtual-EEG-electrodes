@@ -154,7 +154,7 @@ class generator_2():
             print('-------------------- Final testing MAE:', mae_test, 'µV -------------------------')
             print('*********************** Saving results ****************************')
             # save model
-            self.generator.save(self.directory + '/gn1_model.h5')
+            self.generator.save(self.directory + '/gn2_model.h5')
             # save training/validation/test losses
             np.save(self.directory + '/mae_train.npy', self.mae_train)
             np.save(self.directory + '/mae_val.npy', self.mae_val)
@@ -164,7 +164,7 @@ class generator_2():
         else: # skip evaluation with test data
             print('*********************** Saving results ****************************')
             # save model
-            self.generator.save(self.directory + '/gn1_model.h5')
+            self.generator.save(self.directory + '/gn2_model.h5')
             # save training/validation/test losses
             np.save(self.directory + '/mae_train.npy', self.mae_train)
             np.save(self.directory + '/mae_val.npy', self.mae_val)
