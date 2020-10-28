@@ -77,10 +77,14 @@ Activate the environment you just created
 
 Setup your EEG data according to the proposed organization, or create some artificial data using the available script
 
+```
+    python3.7 art_eeg.py
+```
+
 To train a network of type GN1, run
 
 ```
-    python3.7 gn1.py ???
+    python3.7 gn1.py
 ```
 
 To use a trained network of type GN1 on new EEG data, run
