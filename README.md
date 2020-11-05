@@ -79,13 +79,11 @@ All files and folders (data, results, models) will have to be moved to the direc
 
    1. Setup your EEG data according to the proposed organization (see *Data organization*, below)
    2. Download the small sample of artificial data
-   3. Create some artificial data using the available script
+   3. Create some artificial data using the available script:
 
  ```
     python3.7 art_eeg.py
  ```
-
-   This will create the folder 'data' in the current directory if it does not already exist.
     
 To train a network of type GN1, run
 
