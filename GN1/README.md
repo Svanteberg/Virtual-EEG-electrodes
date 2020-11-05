@@ -24,6 +24,12 @@ A tkinter based GUI version is available, `gn1_gui.py`, where training progressi
 
 In the EEG examples, the recreated signals are in black with the corresponding original signals in blue, and the input signals are in red.
 
+## Generating data
+
+The script `gn1_generate_from_model.py` can be used to generate data from a trained model. The script have to be modified to have the right path for the model. The results will be saved in the directory named 'results' as `gn1_new_eeg_from_model.npy`.
+
+The script `gn1_generate_from_pretrained.py` can be used to generate data from a pre-trained model. The script loads weights into the model. The file containing the weights `gn1_weights.h5`have to be downloaded and put in a directory named 'models'. The results will be saved in the directory named 'results' as `gn1_new_eeg_from_pretrained.npy`.
+
 ## Visualizing data
 A simple EEG viewer is provided in the ``plot_eeg_gn1.py`` file for visualizing the saved EEG examples.
 
