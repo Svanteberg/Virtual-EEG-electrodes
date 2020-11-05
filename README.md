@@ -97,7 +97,7 @@ To use a trained model on new EEG data, find the path of the model you would lik
     python3.7 gn1_generate_from_model.py
 ```
 
-To instead use a pre-trained network of type GN1 on new EEG data, the file `gn1_weights.h5` will have to be downloaded into a folder named 'models'. Then run
+To instead use a pre-trained network of type GN1 on new EEG data, the file `gn1_weights.h5` will have to be downloaded into a folder named *models*. Then run
 
 ```
     python3.7 gn1_generate_from_pretrained.py
@@ -109,7 +109,7 @@ To visualize the generated data, and to compare it to the original EEG data, run
     python3.7 plot_eeg_gn1.py
  ```
 
-This will open a GUI. Use the 'Open directory' button to navigate in the 'results' folder to find the EEG data you want to visualize.
+This will open a GUI. Use the 'Open directory' button to navigate in the *results* folder to find the EEG data you want to visualize.
 
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/eeg_gui_results_screenshot.png" width="50%">
