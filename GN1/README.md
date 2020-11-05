@@ -14,7 +14,7 @@ The file `gn1.py` contain a simple version for training GN1. It will train for 1
 - The 5,000 generated and original examples
 - The resulting network model
 
-All will be saved in a folder that is created automatically and named according to the date and time when starting the script: date_time-gn1. The folder will be located in a folder named 'results', that is created if it is not already existing. 
+All will be saved in a folder that is created automatically and named according to the date and time when starting the script: date_time-gn1. The folder will be located in a folder named 'results', that is also created if it is not already existing. 
 
 ## GUI version
 
@@ -25,6 +25,8 @@ A tkinter based GUI version is available, `gn1_gui.py`, where training progressi
 </p>
 
 In the EEG examples, the recreated signals are in black with the corresponding original signals in blue, and the input signals are in red.
+
+The results are saved in a similar manner in a folder named: date_time-gn1_gui.
 
 ## Generating data
 
