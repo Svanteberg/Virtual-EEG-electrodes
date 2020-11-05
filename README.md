@@ -75,7 +75,7 @@ Activate the environment you just created
     conda activate root
 ```
 
-All files and folders (data, results, models) will have to be moved to the directory your using. Setup your EEG data according to the proposed organization, download the small sample of artificial data, or create some artificial data using the available script
+All files and folders (data, results, models) will have to be moved to the directory your using. Setup your EEG data according to the proposed organization (see *Data organization*, below), download the small sample of artificial data, or create some artificial data using the available script
 
 ```
     python3.7 art_eeg.py
@@ -121,7 +121,7 @@ The EEG data from the published database created at the Temple University Hospit
 
 The Python library ‘pyEDFlib’ (Nahrstaedt & Lee-Messer, https://github.com/holgern/pyedflib) was used to extract EEG data. A total of 11,163 recordings (roughly 5,144 hours, from 1,385 subjects) with duration > 300 seconds and sampled at 256 Hz was extracted from the data set. The data was bandpass filtered between 0.3 Hz and 40 Hz using second-degree Butterworth filters. A 60 Hz notch filter was used to remove residual AC-noise. Filtering was applied with zero phase shift.
 
-### Data organisation
+### Data organization
 
 *The developed scripts require that the data is organized in a specific way. This may well be the main challenge for anyone attempting to use the scripts, and it will likely save time to instead modify them to accommodate your own data structure. An example, containing artificial EEG data, is provided [here](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/Artificial_EEG_for_testing_scripts). A script for generating more data is also provided.*
 
