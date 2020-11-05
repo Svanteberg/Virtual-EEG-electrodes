@@ -87,13 +87,13 @@ This will create the folder 'data' in the current directory if it does not alrea
     python3.7 gn1.py
 ```
 
-If the folder 'results' does not exist, it will be created in the current directory. To use a pre-trained network of type GN1 on new EEG data, run
+If the folder 'results' does not exist, it will be created in the current directory. To use a pre-trained network of type GN1 on new EEG data, the file `gn1_weights.h5` will have to be downloaded into a folder named 'models'. Then run
 
 ```
     python3.7 gn1_pretrained.py
 ```
 
-The file ´gn1_weights.h5´ will have to be downloaded into a folder named 'models'. To visualize the generated data, and to compare it to the original EEG data, run
+To visualize the generated data, and to compare it to the original EEG data, run
 
  ```
     python3.7 plot_eeg_gn1.py
