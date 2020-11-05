@@ -78,7 +78,7 @@ Activate the environment you just created
 Choose one of the options:
 
    1. Setup your EEG data according to the proposed organization (see *Data organization*, below).
-   2. Download the small sample of [artificial data](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/Artificial_EEG_for_testing_scripts/data).
+   2. Download a small sample of available [artificial data](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/Artificial_EEG_for_testing_scripts/data).
    3. Create some artificial data using the available [script](https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/Artificial_EEG_for_testing_scripts/art_eeg.py):
 
  ```
