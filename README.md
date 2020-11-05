@@ -75,7 +75,7 @@ Activate the environment you just created
     conda activate root
 ```
 
-Setup your EEG data according to the proposed organization, or create some artificial data using the available script
+All files and folders (data, models) will have to be moved to the directory your using. Setup your EEG data according to the proposed organization, or create some artificial data using the available script
 
 ```
     python3.7 art_eeg.py
@@ -104,6 +104,7 @@ This will open a GUI. Use the 'Open directory' button to find the EEG data.
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/eeg_gui_results_screenshot.png" width="50%">
 </p>
+
 ---
 
 ## Data
