@@ -101,8 +101,9 @@ To visualize the generated data, and to compare it to the original EEG data, run
 
 This will open a GUI. Use the 'Open directory' button to find the EEG data.
 
-<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/eeg_gui_gn1_results:screenshot.png" width="50%">
-
+<p align="center">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/eeg_gui_results_screenshot.png" width="50%">
+</p>
 ---
 
 ## Data
