@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 
 
-from tensorflow.keras.models import Model
+import tensorflow.keras.models as M
 
 """
 This script load a trained model of the GN1 type and generate.
@@ -32,7 +32,7 @@ def load_data():
     return data
 
 # load model
-model = Model('models/gn1_model.h5') # <===== CHANGE THE PATH TO USE YOUR MODEL
+model = M.load_model('models/gn1_model.h5') # <===== CHANGE THE PATH TO USE YOUR MODEL
 # load data
 original_eeg = np.array(load_data())
 # predict data
