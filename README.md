@@ -75,7 +75,7 @@ Activate the environment you just created
     conda activate root
 ```
 
-All files and folders (data, results, models) will have to be moved to the directory your using. Setup your EEG data according to the proposed organization, or create some artificial data using the available script
+All files and folders (data, results, models) will have to be moved to the directory your using. Setup your EEG data according to the proposed organization, download the small sample of artificial data, or create some artificial data using the available script
 
 ```
     python3.7 art_eeg.py
@@ -110,6 +110,8 @@ This will open a GUI. Use the 'Open directory' button to navigate in the 'result
 <p align="center">
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/eeg_gui_results_screenshot.png" width="50%">
 </p>
+
+The available weights are from networks trained on real EEG data. It is possible to use a network with these weights applied to the artificial data but with mixed results. The network will mainly have problem with examples having random signals and/or signals with limited spatial distributions.
 
 ---
 
