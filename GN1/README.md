@@ -26,7 +26,13 @@ In the EEG examples, the recreated signals are in black with the corresponding o
 
 ## Generating data
 
-The script `gn1_generate_from_model.py` can be used to generate data from a trained model. The script have to be modified to have the right path for the model. The results will be saved in the directory named 'results' as `gn1_new_eeg_from_model.npy`.
+The script `gn1_generate_from_model.py` can be used to generate data from a trained model. The script have to be modified to have the right path for the model.
+
+<p align="center">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/change_path.png" width="100%">
+</p>
+
+The results will be saved in the directory named 'results' as `gn1_new_eeg_from_model.npy`.
 
 The script `gn1_generate_from_pretrained.py` can be used to generate data from a pre-trained model. The script loads weights into the model. The file containing the weights `gn1_weights.h5`have to be downloaded and put in a directory named 'models'. The results will be saved in the directory named 'results' as `gn1_new_eeg_from_pretrained.npy`.
 
