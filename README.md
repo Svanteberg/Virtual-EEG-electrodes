@@ -87,8 +87,6 @@ This will create the folder 'data' in the current directory if it does not alrea
     python3.7 gn1.py
 ```
 
-If the folder 'results' does not exist, it will be created in the current directory.
-
 To use a trained model on new EEG data, find the path of the model you would like to use, and modify the script `gn1_generate_from_model.py` to use this path for loading the model. Then run the script
 
 ```
