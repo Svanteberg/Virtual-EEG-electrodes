@@ -81,9 +81,9 @@ All files and folders (data, results, models) will have to be moved to the direc
    2. Download the small sample of artificial data
    3. Create some artificial data using the available script
 
-    ```
-        python3.7 art_eeg.py
-    ```
+ ```
+    python3.7 art_eeg.py
+ ```
 
    This will create the folder 'data' in the current directory if it does not already exist.
     
