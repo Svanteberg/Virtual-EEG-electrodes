@@ -14,6 +14,8 @@ The file `gn3.py` contain a simple version for training GN3. It will train for 1
 - The 5,040 generated and original examples
 - The resulting network model
 
+All will be saved in a folder that is created automatically and named according to the date and time when starting the script: date_time-gn3. The folder will be located in a folder named 'results', that is also created if it is not already existing. 
+
 ## GUI version
 
 A tkinter based GUI version is available, `gn3_gui.py`, where training progression, MAE of individual electrodes, and EEG examples are plotted intermittently.
