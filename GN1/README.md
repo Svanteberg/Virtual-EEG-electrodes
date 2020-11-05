@@ -19,7 +19,7 @@ The file `gn1.py` contain a simple version for training GN1. It will train for 1
 A tkinter based GUI version is available, `gn1_gui.py`, where training progression, MAE of individual electrodes, and EEG examples are plotted intermittently.
 
 <p align="center">
-<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/gn1_gui_screenshoot.png" width="50%">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/gn1_gui_screenshoot.png" width="100%">
 </p>
 
 In the EEG examples, the recreated signals are in black with the corresponding original signals in blue, and the input signals are in red.
@@ -29,7 +29,7 @@ In the EEG examples, the recreated signals are in black with the corresponding o
 The script `gn1_generate_from_model.py` can be used to generate data from a trained model. The script have to be modified to have the right path for the model.
 
 <p align="center">
-<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/change_path.png" width="100%">
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/change_path.png" width="50%">
 </p>
 
 The results will be saved in the directory named 'results' as `gn1_new_eeg_from_model.npy`.
