@@ -75,10 +75,10 @@ Activate the environment you just created
     conda activate root
 ```
 
-All files and folders (data, results, models) will have to be moved to the directory your using. Choose one of the options:
+Choose one of the options:
 
-   1. Setup your EEG data according to the proposed organization (see *Data organization*, below)
-   2. Download the small sample of artificial data
+   1. Setup your EEG data according to the proposed organization (see *Data organization*, below).
+   2. Download the small sample of artificial data.
    3. Create some artificial data using the available script:
 
  ```
