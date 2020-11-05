@@ -75,13 +75,19 @@ Activate the environment you just created
     conda activate root
 ```
 
-All files and folders (data, results, models) will have to be moved to the directory your using. Setup your EEG data according to the proposed organization (see *Data organization*, below), download the small sample of artificial data, or create some artificial data using the available script
+All files and folders (data, results, models) will have to be moved to the directory your using. Choose one of the options:
 
-```
-    python3.7 art_eeg.py
-```
+    1. Setup your EEG data according to the proposed organization (see *Data organization*, below)
+    2. Download the small sample of artificial data
+    3. Create some artificial data using the available script
 
-This will create the folder 'data' in the current directory if it does not already exist. To train a network of type GN1, run
+    ```
+        python3.7 art_eeg.py
+    ```
+
+    This will create the folder 'data' in the current directory if it does not already exist.
+    
+To train a network of type GN1, run
 
 ```
     python3.7 gn1.py
