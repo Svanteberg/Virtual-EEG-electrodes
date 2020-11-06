@@ -1,4 +1,4 @@
-name: base
+name: eeg2
 channels:
   - conda-forge
   - defaults
@@ -295,5 +295,4 @@ dependencies:
     - tensorflow-estimator==1.13.0
     - tensorflow-gpu==1.13.1
     - termcolor==1.1.0
-prefix: /home/matsv/anaconda3
 
