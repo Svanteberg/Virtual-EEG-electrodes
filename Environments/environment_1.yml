@@ -1,4 +1,4 @@
-name: root
+name: eeg1
 channels:
   - anaconda
   - defaults
@@ -291,5 +291,4 @@ dependencies:
     - tensorflow-gpu==1.10.1
     - termcolor==1.1.0
     - tf-keras-contrib==2.0.8
-prefix: /home/proboscis/anaconda3
 
