@@ -1,4 +1,4 @@
-name: base
+name: eeg3
 channels:
   - conda-forge
   - anaconda
@@ -328,5 +328,4 @@ dependencies:
     - tensorboard==2.1.1
     - tensorflow-estimator==2.1.0
     - tensorflow-gpu==2.1.0
-prefix: /home/proboscis/anaconda3
 
