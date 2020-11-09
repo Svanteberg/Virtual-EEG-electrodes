@@ -54,7 +54,9 @@ The first file is a simpler version for training the respective networks. The se
 
 ## Installing software and running scripts
 
-To use / train the networks, first install Anaconda, https://www.anaconda.com/products/individual , e.g. for Linux
+The following instructions have been written for Linux. It is assumed that a computer with working installed (nVidia) graphics card and drivers are used.
+
+To use / train the networks, first install Anaconda, https://www.anaconda.com/products/individual
 
 ```
     wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
