@@ -74,7 +74,7 @@ Then create an Anaconda environment from one of the available environment files
 Activate the environment you just created
 
 ```
-    conda activate root
+    conda activate eeg1
 ```
 
 Choose one of the options:
