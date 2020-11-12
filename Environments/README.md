@@ -1,6 +1,8 @@
 # Environments
 
-The code has been tested on several computers and their respective environment are provided in the yml-files.
+The code has been tested on several computers and their respective environment are provided in the yml-files. All computers use Ubuntu.
+
+If you are unsuccessful using one environment, try another. When trying to use the environments on other computers than these four, we have had problems in some instances, and environment 3 and 4 have had the highest success rate (probably because computer 3 and 4 are newer and therefore may have later versions of some packages).
 
 ### Computer 1
 
