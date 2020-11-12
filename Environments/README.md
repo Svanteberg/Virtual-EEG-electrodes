@@ -6,7 +6,7 @@ If you are unsuccessful using one environment, try another. When trying to use t
 
 ### Computer 1
 
-environment_2.yml
+environment_1.yml
 
 Run `conda activate eeg1` to active it.
 
