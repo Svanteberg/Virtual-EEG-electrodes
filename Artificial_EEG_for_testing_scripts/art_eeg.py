@@ -162,7 +162,7 @@ def generate_data(num, duration):
         last = 0
         # generate 1 - 3 EEGs
         for _ in range(np.random.randint(1, 4)):
-            EEG = generate_eeg()
+            EEG = generate_eeg(duration)
             epochs = int(np.shape(EEG)[1]/2560)
             for j in range(epochs):
                 np.save(directory + '/' + folder_name+  '/eeg_' + str(last + j) + '.npy', EEG[:, 2560*j:2560*(j + 1)])
