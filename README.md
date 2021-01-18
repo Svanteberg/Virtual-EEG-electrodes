@@ -157,7 +157,7 @@ The provided small sample (10 subjects, each with 5 - 15 x 10 s of data) of arti
 
 #### Setting up a structure for directories
 
-The figure below illustrates how to setup the needed folders for working with the GN1 network (in addition, when training networks, a folder named *results* will be created automatically).
+The figure below illustrates how to setup the needed folders for working with the GN1 network (in addition, when training networks, a folder named *results* will be created automatically and placed at the same level as the script (root below)).
 
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/directory_structure.png" width="100%">
 
