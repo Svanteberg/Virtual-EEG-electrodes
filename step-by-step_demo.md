@@ -39,9 +39,10 @@ Positioned at *root*, create folders named:
 
 Download the scripts:
 
-4) [gn1.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/GN1/gn1.py)
-5) [art_eeg.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/Artificial_EEG_for_testing_scripts/art_eeg.py)
-6) [plot_eeg_gn1.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/GN1/plot_eeg_gn1.py)
+4) [art_eeg.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/Artificial_EEG_for_testing_scripts/art_eeg.py)
+5) [gn1.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/GN1/gn1.py)
+6) [gn1_generate_from_model.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/GN1/gn1_generate_from_model.py)
+7) [plot_eeg_gn1.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/GN1/plot_eeg_gn1.py)
 
 and put them in *root*.
 
