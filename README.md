@@ -151,6 +151,8 @@ Choose one of the options:
     python3.7 art_eeg.py
  ```
 
+This script generate 21-channel signals sampled at 256 Hz resembling EEG. Unaltered, it generates data corresponding to 10 subjects with (randomly) 1 - 3 EEGs each of 5 min duration. The time consumtion will be hardware dependent but may be a couple of minutes per subject, so the whole set may take 20 - 40 min.
+
 #### Setting up a structure for directories
 
 The figure below illustrates how to setup the needed folders for working with the GN1 network.
@@ -159,7 +161,7 @@ The figure below illustrates how to setup the needed folders for working with th
 
 This mean that root should contain folders named *data* and *models*, and all Python scripts (all files with the `.py` extension). The folder *models* should contain provided weights of pre-trained networks or models you have trained (all files with the `.h5` extension).
 
-Downloading the provided small sample of artificial data or running the script for generating artificial data should create the correct structure for the data when working with the networks, as long as the *data* folder is located as described above.
+Some of the scripts will create folders automatically, if they do not already exist. So, for instance, running `python3.7 art_eeg.py` will create the folder *data* and running `python3.7 gn1.py` will create the folder *results*. The folder *models* will have to be created and models that have been trained by the user will have to be moved from subfolders of the *results* folder.
 
 ---
 
