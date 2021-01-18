@@ -155,7 +155,7 @@ This script generate 21-channel signals sampled at 256 Hz resembling EEG. Unalte
 
 #### Setting up a structure for directories
 
-The figure below illustrates how to setup the needed folders for working with the GN1 network.
+The figure below illustrates how to setup the needed folders for working with the GN1 network (in addition, when training networks, a folder named *results* will be created automatically).
 
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/directory_structure.png" width="100%">
 
