@@ -55,11 +55,13 @@ Create some artificial data using the available script [art_eeg.py](https://gith
 
 ## D. Train the GN1 network
 
+Execute the folloing to train a network:
+
 ```
     python3.7 gn1.py
 ```
 
-This may consume a couple of hours.
+This may consume a couple of hours. The resulting model and test results will be saved in a subfolder in the folder *results*. The subfolder will be named according to date-time-gn1, e.g., 20210101-111214-gn1.
 
 ## E. Use the trained network for generating new artificial data
 
