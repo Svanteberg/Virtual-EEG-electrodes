@@ -48,7 +48,7 @@ An example of the training progression for GN1 of the first 0 to 200 examples is
 
 Blue font in the text indicate link to directory or script.
 
-### Directories
+### Directories of the repo
 
 The directory [GN1](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1) contains the files:
 
@@ -131,7 +131,13 @@ Choose one of the options:
     python3.7 art_eeg.py
  ```
 
+### Setting up a structure for directories
+
+The figure below illustrates how to setup the needed folders for working with the GN1 network.
+
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/directory_structure.png" width="100%">
+
+This mean that root should contain folders named *data* and *models*, and all Python scripts (all files with the *.py* extension). The folder *models* should contain provided weights of pre-trained networks or models you have trained.
 
 ### Train network
 
