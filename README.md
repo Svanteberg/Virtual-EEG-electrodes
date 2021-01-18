@@ -104,7 +104,7 @@ For the GN1 network, a script for generating data from a model that you have tra
 
 ##### [Artificial_EEG_for_testing_scripts](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/Artificial_EEG_for_testing_scripts)
 
-The directory contains a script [art_eeg.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/Artificial_EEG_for_testing_scripts/art_eeg.py) for generating artificial EEG data and a script [plot_original_eeg.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/Artificial_EEG_for_testing_scripts/plot_original_eeg.py) for visualizung the data. The data can be used as a substitute to real EEG data to train and test the networks, since it may take a larger effort to setup for using real data.
+The directory contains a script [art_eeg.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/Artificial_EEG_for_testing_scripts/art_eeg.py) for generating artificial EEG data and a script [plot_original_eeg.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/Artificial_EEG_for_testing_scripts/plot_original_eeg.py) for visualizing the data. The data can be used as a substitute to real EEG data to train and test the networks, since it may take a larger effort to setup for using real data.
 
 ##### [Environments](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/Environments)
 
