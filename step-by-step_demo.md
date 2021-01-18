@@ -84,6 +84,6 @@ This may consume a couple of hours. The resulting model and test results will be
     python3.7 plot_eeg_gn1.py
  ```
 
-2)  Use the 'Open directory' button to navigate in the *results* folder to find the EEG data you want to visualize. The file containing the generated data is named gn1_new_eeg_from_model.npy`.
+2)  Use the 'Open directory' button to navigate in the *results* folder to find the EEG data you want to visualize. The file containing the generated data is named `gn1_new_eeg_from_model.npy`.
 
 
