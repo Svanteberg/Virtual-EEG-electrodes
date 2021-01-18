@@ -46,7 +46,7 @@ An example of the training progression for GN1 of the first 0 to 200 examples is
 
 ## Installing software and running scripts
 
-Blue font in the text indicate link to directory or script.
+Blue font in the text indicate link to directory or script. Examples given here are for using/working with the GN1 network.
 
 ### Directories of the repo
 
@@ -137,7 +137,7 @@ The figure below illustrates how to setup the needed folders for working with th
 
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/directory_structure.png" width="100%">
 
-This mean that root should contain folders named *data* and *models*, and all Python scripts (all files with the *.py* extension). The folder *models* should contain provided weights of pre-trained networks or models you have trained.
+This mean that root should contain folders named *data* and *models*, and all Python scripts (all files with the *.py* extension). The folder *models* should contain provided weights of pre-trained networks or models you have trained (all files with the *.h5* extension).
 
 ### Train network
 
