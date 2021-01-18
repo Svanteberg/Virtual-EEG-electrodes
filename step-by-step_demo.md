@@ -68,7 +68,7 @@ This may consume a couple of hours. The resulting model and test results will be
 
 ## E. Use the trained network for generating new artificial data
 
-1) Find the file `gn1_model.h5`in the right subfolder of the *results* folder.
+1) Find the file `gn1_model.h5`in the right subfolder of the *results* folder
 2) Move it to the *models* folder
 3) Run
 
