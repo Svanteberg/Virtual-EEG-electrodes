@@ -58,7 +58,7 @@ Create some artificial data using the available script [art_eeg.py](https://gith
 
 ## D. Train the GN1 network
 
-Execute the folloing to train a network:
+Execute the following to train a network:
 
 ```
     python3.7 gn1.py
