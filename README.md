@@ -50,6 +50,10 @@ Blue font in the text indicate link to directory or script.
 
 ### Directories of the repo
 
+#### GN1, GN2, and GN3 directories
+
+##### Content
+
 The directory [GN1](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1) contains the files:
 
    [gn1.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1.py)
@@ -84,6 +88,8 @@ The directory [GN3](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/ma
 
    [plot_eeg_gn3.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/plot_eeg_gn3.py).
 
+##### Description of files
+
 The files `gn1.py`, `gn2.py`, and `gn3.py` are simpler versions for training the respective networks.
 
 The files `gn1_gui.py`, `gn2_gui.py`, and `gn3_gui.py` are GUI versions that shows the training progression and intermittently shows EEG examples during training.
@@ -93,6 +99,18 @@ The files `gn1_weight.h5`, `gn2_weights.h5`, and `gn3_weight.h5` contain weights
 The files `plot_eeg_gn1.py`, `plot_eeg_gn2.py`, and `plot_eeg_gn3.py` are simple GUIs for visualizing the resulting generated data and compare it to the original EEG. 
 
 For the GN1 network, a script for generating data from a model that you have trained is provided in the file `gn1_generate_from_model.py` and the file `gn1_generate_from_pretrained.py` will create the model using the provided weights `gn1_weights.h5` and generate data. 
+
+---
+
+#### Auxiliary directories
+
+##### Artificial data
+
+The directory contains a script `art_eeg.py` for generating artificial EEG data and a script `plot_original_eeg.py` for visualizung the data. The data can be used as a substitute to real EEG data to train and test the networks, since it may take a larger effort to setup for using real data.
+
+##### Environments
+
+This directory contain four different yml-files of environments that can be tried to possibly make it easier to use the scripts.
 
 ---
 
