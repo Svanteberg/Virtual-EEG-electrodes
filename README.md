@@ -157,6 +157,12 @@ To train a network of type GN1, run
     python3.7 gn1.py
 ```
 
+or use the GUI version
+
+```
+    python3.7 gn1_gui.py
+```
+
 #### Use a trained network for generating new artificial data
 
 To use a model, that you have trained, on new EEG data, find the path of the model you would like to use, and modify the script `gn1_generate_from_model.py` to use this path for loading the model. Then run the script
