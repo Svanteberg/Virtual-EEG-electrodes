@@ -1,6 +1,6 @@
 # Step-by-step demo
 
-This demo will create a set of artificial data to work with, train a network of type GN1, generate new data which then will be visualized.
+This demo will create a set of artificial data to work with, train a network of type GN1, generate new data which will then be visualized.
 
 ## A. Setting up Anaconda environment
 
