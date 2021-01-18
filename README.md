@@ -46,7 +46,7 @@ An example of the training progression for GN1 of the first 0 to 200 examples is
 
 ## Installing software and running scripts
 
-Blue font in the text indicate link to directory or script. Examples given here are for using/working with the GN1 network.
+Blue font in the text indicate link to directory or script.
 
 ### Directories of the repo
 
@@ -94,7 +94,11 @@ The files `plot_eeg_gn1.py`, `plot_eeg_gn2.py`, and `plot_eeg_gn3.py` are simple
 
 For the GN1 network, a script for generating data from a model that you have trained is provided in the file `gn1_generate_from_model.py` and the file `gn1_generate_from_pretrained.py` will create the model using the provided weights `gn1_weights.h5` and generate data. 
 
-### Setting up Anaconda environment
+---
+
+### Preparation
+
+#### Setting up Anaconda environment
 
 The following instructions have been written for Linux. It is assumed that a computer with working installed (nVidia) graphics card and drivers are used.
 
@@ -119,7 +123,7 @@ Activate the environment you just created
     conda activate eeg1
 ```
 
-### Data
+#### Data
 
 Choose one of the options:
 
@@ -139,7 +143,13 @@ The figure below illustrates how to setup the needed folders for working with th
 
 This mean that root should contain folders named *data* and *models*, and all Python scripts (all files with the *.py* extension). The folder *models* should contain provided weights of pre-trained networks or models you have trained (all files with the *.h5* extension).
 
-### Train network
+---
+
+### Using scripts
+
+Examples given here are for using/working with the GN1 network.
+
+#### Train a network
 
 To train a network of type GN1, run
 
@@ -147,7 +157,7 @@ To train a network of type GN1, run
     python3.7 gn1.py
 ```
 
-### Use a trained network for generating new artificial data
+#### Use a trained network for generating new artificial data
 
 To use a model, that you have trained, on new EEG data, find the path of the model you would like to use, and modify the script `gn1_generate_from_model.py` to use this path for loading the model. Then run the script
 
@@ -161,7 +171,7 @@ To instead use one of our pre-trained network of type GN1 on new EEG data, the f
     python3.7 gn1_generate_from_pretrained.py
 ```
 
-### Visualizing data
+#### Visualizing data
 
 To visualize the generated data, and to compare it to the original EEG data, run
 
