@@ -56,7 +56,13 @@ The directory [GN2](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/ma
 
 The directory [GN3](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3) contain the files: [gn3.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3.py), [gn3_gui.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3_gui.py), [gn3_weights.h5](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3_weights.h5), and [plot_eeg_gn3.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/plot_eeg_gn3.py).
 
-The files gn1.py, gn2.py, and gn3.py are simpler versions for training the respective networks. The files gn1_gui.py, gn2_gui.py, and gn3_gui.py are GUI versions that shows the training progression and intermittently shows EEG examples. The files plot_eeg_gn1.py, plot_eeg_gn2.py, and plot_eeg_gn3.py are simple GUIs for visualizing the resulting generated data and compare it to the original EEG. For the GN1 network, a script for generating data from an already trained model is provided in the file gn1_generate_from_model.py.
+The files `gn1.py`, `gn2.py`, and `gn3.py` are simpler versions for training the respective networks.
+
+The files `gn1_gui.py`, `gn2_gui.py`, and `gn3_gui.py` are GUI versions that shows the training progression and intermittently shows EEG examples.
+
+The files `plot_eeg_gn1.py`, `plot_eeg_gn2.py`, and `plot_eeg_gn3.py` are simple GUIs for visualizing the resulting generated data and compare it to the original EEG. 
+
+For the GN1 network, a script for generating data from a model that you have trained is provided in the file `gn1_generate_from_model.py` and the file `gn1_generate_from_pretrained.py` will create the model using the provided weights `gn1_weights.h5` and generate data. 
 
 ### Setting up Anaconda environment
 
