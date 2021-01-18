@@ -165,7 +165,7 @@ or use the GUI version
 
 #### Use a trained network for generating new artificial data
 
-To use a model, that you have trained, on new EEG data, find the path of the model you would like to use, and modify the script `gn1_generate_from_model.py` to use this path for loading the model. Then run the script
+To use a model, that you have trained, on new EEG data, find the path of the model you would like to use, and modify the script `gn1_generate_from_model.py` to use this path for loading the model. Or, you can put the file containing the model in the folder *models* and make sure it is named `gn1_model.h5`. Then run the script
 
 ```
     python3.7 gn1_generate_from_model.py
