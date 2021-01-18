@@ -117,7 +117,7 @@ Then create an Anaconda environment from one of the available [environment files
     conda env create -f environment_1.yml
 ```
 
-Activate the environment you just created
+Activate the environment you just created (here examplified for [environment_1.yml](https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/Environments/environment_1.yml))
 
 ```
     conda activate eeg1
