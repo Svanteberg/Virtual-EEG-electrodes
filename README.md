@@ -141,7 +141,7 @@ The figure below illustrates how to setup the needed folders for working with th
 
 <img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/directory_structure.png" width="100%">
 
-This mean that root should contain folders named *data* and *models*, and all Python scripts (all files with the *.py* extension). The folder *models* should contain provided weights of pre-trained networks or models you have trained (all files with the *.h5* extension).
+This mean that root should contain folders named *data* and *models*, and all Python scripts (all files with the `.py` extension). The folder *models* should contain provided weights of pre-trained networks or models you have trained (all files with the `.h5` extension).
 
 ---
 
