@@ -89,6 +89,8 @@ Activate the environment you just created
     conda activate eeg1
 ```
 
+### Data
+
 Choose one of the options:
 
    1. Setup your EEG data according to the proposed organization (see *Data organization*, below).
@@ -98,14 +100,17 @@ Choose one of the options:
  ```
     python3.7 art_eeg.py
  ```
-    
+### Train network
+
 To train a network of type GN1, run
 
 ```
     python3.7 gn1.py
 ```
 
-To use a trained model on new EEG data, find the path of the model you would like to use, and modify the script `gn1_generate_from_model.py` to use this path for loading the model. Then run the script
+### Use a trained network for generating new artificial data
+
+To use a model, that you have trained, on new EEG data, find the path of the model you would like to use, and modify the script `gn1_generate_from_model.py` to use this path for loading the model. Then run the script
 
 ```
     python3.7 gn1_generate_from_model.py
@@ -116,6 +121,8 @@ To instead use a pre-trained network of type GN1 on new EEG data, the file `gn1_
 ```
     python3.7 gn1_generate_from_pretrained.py
 ```
+
+### Visualizing data
 
 To visualize the generated data, and to compare it to the original EEG data, run
 
