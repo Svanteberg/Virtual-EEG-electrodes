@@ -146,7 +146,7 @@ To use a model, that you have trained, on new EEG data, find the path of the mod
     python3.7 gn1_generate_from_model.py
 ```
 
-To instead use a pre-trained network of type GN1 on new EEG data, the file `gn1_weights.h5` will have to be downloaded into a folder named *models*. Then run
+To instead use one of our pre-trained network of type GN1 on new EEG data, the file `gn1_weights.h5` will have to be downloaded into a folder named *models*. Then run
 
 ```
     python3.7 gn1_generate_from_pretrained.py
