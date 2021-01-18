@@ -110,7 +110,7 @@ The directory contains a script [art_eeg.py](https://github.com/Svanteberg/Virtu
 
 ##### [Environments](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/Environments)
 
-This directory contain four different yml-files of environments that can be tried to possibly make it easier to use the scripts.
+This directory contains four different yml-files of environments that can be tried to possibly make it easier to use the scripts.
 
 ---
 
