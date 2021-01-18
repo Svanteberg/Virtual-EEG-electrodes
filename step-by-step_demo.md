@@ -27,7 +27,7 @@ The following instructions have been written for Linux. It is assumed that a com
     conda activate eeg1
 ```
 
-If the environment does not work for you, test using one of the other available environments [link](https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/Environments): environment_2.yml, environment_3.yml, and environment_4.yml. When activating, instead use: eeg2, eeg3, or eeg4.
+If the environment does not work for you, test using one of the other available environments ([link](https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/Environments)): environment_2.yml, environment_3.yml, and environment_4.yml. When activating, instead use: eeg2, eeg3, or eeg4.
 
 ## B. Setting up folders
 
