@@ -52,37 +52,37 @@ Blue font in the text indicate link to directory or script.
 
 The directory [GN1](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1) contain the files:
 
-    [gn1.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1.py)
+   [gn1.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1.py)
 
-    [gn1_generate_from_model.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1_generate_from_model.py)
+   [gn1_generate_from_model.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1_generate_from_model.py)
 
-    [gn1_generate_from_pretrained.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1_generate_from_pretrained.py)
+   [gn1_generate_from_pretrained.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1_generate_from_pretrained.py)
 
-    [gn1_gui.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1_gui.py)
+   [gn1_gui.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1_gui.py)
 
-    [gn1_weights.h5](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1_weights.h5)
+   [gn1_weights.h5](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1_weights.h5)
 
-    [plot_eeg_gn1.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/plot_eeg_gn1.py).
+   [plot_eeg_gn1.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/plot_eeg_gn1.py).
 
 The directory [GN2](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2) contain the files:
 
-    [gn2.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2/gn2.py)
+   [gn2.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2/gn2.py)
 
-    [gn2_gui.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2/gn2_gui.py)
+   [gn2_gui.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2/gn2_gui.py)
 
-    [gn2_weights.h5](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2/gn2_weights.h5)
+   [gn2_weights.h5](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2/gn2_weights.h5)
 
-    [plot_eeg_gn2.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2/plot_eeg_gn2.py).
+   [plot_eeg_gn2.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2/plot_eeg_gn2.py).
 
 The directory [GN3](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3) contain the files:
 
-    [gn3.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3.py)
+   [gn3.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3.py)
 
-    [gn3_gui.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3_gui.py)
+   [gn3_gui.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3_gui.py)
 
-    [gn3_weights.h5](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3_weights.h5)
+   [gn3_weights.h5](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3_weights.h5)
 
-    [plot_eeg_gn3.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/plot_eeg_gn3.py).
+   [plot_eeg_gn3.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/plot_eeg_gn3.py).
 
 The files `gn1.py`, `gn2.py`, and `gn3.py` are simpler versions for training the respective networks.
 
