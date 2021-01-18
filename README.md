@@ -54,6 +54,20 @@ The first file is a simpler version for training the respective networks. The se
 
 ## Installing software and running scripts
 
+Blue font in the text indicate link to directory or script.
+
+### Directories
+
+The directory [GN1](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1) contain the files: [gn1.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1.py), [gn1_generate_from_model.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1_generate_from_model.py), [gn1_generate_from_pretrained.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1_generate_from_pretrained.py), [gn1_gui.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1_gui.py), [gn1_weights.h5](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/gn1_weights.h5), and [plot_eeg_gn1.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN1/plot_eeg_gn1.py).
+
+The directory [GN2](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2) contain the files: [gn2.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2/gn2.py), [gn2_gui.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2/gn2_gui.py), [gn2_weights.h5](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2/gn2_weights.h5), and [plot_eeg_gn2.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN2/plot_eeg_gn2.py).
+
+The directory [GN3](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3) contain the files: [gn3.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3.py), [gn3_gui.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3_gui.py), [gn3_weights.h5](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/gn3_weights.h5), and [plot_eeg_gn3.py](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/GN3/plot_eeg_gn3.py).
+
+The first file is a simpler version for training the respective networks. The second a GUI version that shows the training progression and intermittently shows EEG examples. The third file is simple GUI for visualizing the resulting generated data and compare it to the original EEG.
+
+### Setting up Anaconda environment
+
 The following instructions have been written for Linux. It is assumed that a computer with working installed (nVidia) graphics card and drivers are used.
 
 To use / train the networks, first install Anaconda, https://www.anaconda.com/products/individual
