@@ -151,7 +151,9 @@ Choose one of the options:
     python3.7 art_eeg.py
  ```
 
-This script generate 21-channel signals sampled at 256 Hz resembling EEG. Unaltered, it generates data corresponding to 10 subjects with (randomly) 1 - 3 EEGs each of 5 min duration. The time consumtion will be hardware dependent but may be a couple of minutes per subject, so the whole set may take 20 - 40 min to generate. The provided small sample of artificial data was generated using this script.
+This script generate 21-channel signals sampled at 256 Hz resembling EEG. Unaltered, it generates data corresponding to 10 subjects with (randomly) 1 - 3 EEGs each of 5 min duration. The time consumtion will be hardware dependent but may be a couple of minutes per subject, so the whole set may take 20 - 40 min to generate. 
+
+The provided small sample (10 subjects, each with 5 x 10 s of data) of artificial data was generated using this script.
 
 #### Setting up a structure for directories
 
