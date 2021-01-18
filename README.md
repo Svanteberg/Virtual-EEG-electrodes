@@ -48,6 +48,8 @@ An example of the training progression for GN1 of the first 0 to 200 examples is
 
 Blue font in the text indicate link to directory or script.
 
+There are several options when using the code that is provided. A simpler step-by-step demo for training a GN1 type network is given here: [demo](https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/ste-by-step_demo). Further down below, more general instructions are given.
+
 ### Directories of the repo
 
 #### GN1, GN2, and GN3 directories
