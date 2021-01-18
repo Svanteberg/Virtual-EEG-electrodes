@@ -29,7 +29,7 @@ The following instructions have been written for Linux. It is assumed that a com
 
 ## B. Setting up folders
 
-Positioned att *root*, create folders named:
+Positioned at *root*, create folders named:
 
 1) *data*
 2) *models*
