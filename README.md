@@ -135,7 +135,7 @@ Choose one of the options:
     python3.7 art_eeg.py
  ```
 
-### Setting up a structure for directories
+#### Setting up a structure for directories
 
 The figure below illustrates how to setup the needed folders for working with the GN1 network.
 
