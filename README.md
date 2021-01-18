@@ -98,9 +98,9 @@ The files `gn1_weight.h5`, `gn2_weights.h5`, and `gn3_weight.h5` contain weights
 
 The files `plot_eeg_gn1.py`, `plot_eeg_gn2.py`, and `plot_eeg_gn3.py` are simple GUIs for visualizing the resulting generated data and compare it to the original EEG. 
 
-For the GN1 network, a script for generating data from a model that you have trained is provided in the file `gn1_generate_from_model.py` and the file `gn1_generate_from_pretrained.py` will create the model using the provided weights `gn1_weights.h5` and generate data. 
+For the GN1 network, a script for generating data from a model that you have trained is provided in the file `gn1_generate_from_model.py` and the file `gn1_generate_from_pretrained.py` will create the model using the provided weights `gn1_weights.h5` and generate data.
 
-----
+...
 
 #### Auxiliary directories
 
