@@ -130,6 +130,9 @@ Choose one of the options:
  ```
     python3.7 art_eeg.py
  ```
+
+<img src="https://github.com/Svanteberg/Virtual-EEG-electrodes/blob/master/images/directory_structure.png" width="100%">
+
 ### Train network
 
 To train a network of type GN1, run
