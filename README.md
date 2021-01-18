@@ -111,7 +111,7 @@ To use / train the networks, first install Anaconda, https://www.anaconda.com/pr
 ```
 
 
-Then create an Anaconda environment from one of the available environment files
+Then create an Anaconda environment from one of the available [environment files](https://github.com/Svanteberg/Virtual-EEG-electrodes/tree/master/Environments)
 
 ```
     conda env create -f environment_1.yml
