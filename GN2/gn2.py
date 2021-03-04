@@ -114,6 +114,19 @@ class generator_2():
             else:
                 self.test_subjects.append(self.subjects[i])
                 self.test_indices.append(self.file_indices[i])
+        # if there are few subjects the smaller sets (validation, test) may end up empty, if so, one subject will randomly be moved from the training set to the empty set
+        if len(self.val_subjects) < 1:
+                move_subject = random.sample(range(len(self.train_subjects)), 1)[0]
+                self.val_subjects.append(self.train_subjects[move_subject])
+                self.val_indices.append(self.train_indices[move_subject])
+                self.train_subjects.pop(move_subject)
+                self.train_indices.pop(move_subject)
+        if len(self.test_subjects) < 1:
+                move_subject = random.sample(range(len(self.train_subjects)), 1)[0]
+                self.test_subjects.append(self.train_subjects[move_subject])
+                self.test_indices.append(self.train_indices[move_subject])
+                self.train_subjects.pop(move_subject)
+                self.train_indices.pop(move_subject)
         # create generator network
         self.generator = self.generator_model()
         self.generator.compile(loss='mae',optimizer=Adam(1e-4, 0.5, 0.999))
