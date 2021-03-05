@@ -70,7 +70,7 @@ Observe, this may consume more than 24 hours. Most of the time will be due to ev
 
 1) Training for fewer number of epochs will achieve this (but at the expence of the results). The number can be changed in `self.epochs = 1000` in line 89 of `gn1.py`.
 2) The number of examples used for evaluating at the end of each epoch can be changed. The default number is 1000 examples each of training and validation data. The number can be changed by adding an input to the calling of the function `self.training_test()`in line 193, e.g., `self.training_test(num = 100)`.
-3) The evaluation at the end of each epoch can be skipped all together by unmarking line 193–195 (using #).
+3) The evaluation at the end of each epoch can be skipped all together by unmarking line 192–194 (using #).
 
 ## E. Use the trained network for generating new artificial data
 
