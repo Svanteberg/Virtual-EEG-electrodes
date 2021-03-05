@@ -64,7 +64,13 @@ Execute the following to train a network:
     python3.7 gn1.py
 ```
 
-This may consume more than 24 hours. The resulting model and test results will be saved in a subfolder in the folder *results*. The subfolder will be named according to date-time-gn1, e.g., 20210101-111214-gn1.
+The resulting model and test results will be saved in a subfolder in the folder *results*. The subfolder will be named according to date-time-gn1, e.g., 20210101-111214-gn1.
+
+Observe, this may consume more than 24 hours. Most of the time will be due to evaluating after each epoch. There are several ways to reduce the time (e.g.):
+
+1) Training for fewer number of epochs will achieve this (but at the expence of the results). The number can be changed in `self.epochs = 1000` in line 89 of `gn1.py`.
+2) The number of examples used for evaluating at the end of each epoch can be changed. The default number is 1000 examples each of training and validation data. The number can be changed by adding an input to the calling of the function `self.training_test()`in line 193, e.g., `self.training_test(num = 100).
+3) The evaluation at the end of each epoch can be skipped all together by unmarking line 193–195 (using #).
 
 ## E. Use the trained network for generating new artificial data
 
